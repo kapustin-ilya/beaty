@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration orderStatus="WARN">
+    <Appenders>
+        <File name="File" fileName="D:\JavaBasicEpam\Final Task\beaty\log\log4j.log" append="true">
+            <PatternLayout>
+                <Pattern>%d{HH:mm:ss.SSS} [%t] %-5level - %msg%n</Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="web" level="trace" additivity="true">
+            <AppenderRef ref="File" />
+        </Logger>
+    </Loggers>
+</Configuration>

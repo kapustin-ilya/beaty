@@ -1,0 +1,1814 @@
+
+11:45:59.791 [http-nio-8080-exec-4] INFO  - User 2 logged in
+12:00:10.087 [http-nio-8080-exec-2] INFO  - User 2 logged in
+12:00:22.412 [http-nio-8080-exec-9] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:63) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:00:22.607 [http-nio-8080-exec-9] INFO  - Update data in table user. Id - 2
+12:00:22.608 [http-nio-8080-exec-9] INFO  - User (2 userId) update own profile.
+12:00:25.229 [http-nio-8080-exec-1] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:63) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:00:25.234 [http-nio-8080-exec-1] INFO  - Update data in table user. Id - 2
+12:00:25.235 [http-nio-8080-exec-1] INFO  - User (2 userId) update own profile.
+12:00:27.294 [http-nio-8080-exec-2] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:63) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:00:27.319 [http-nio-8080-exec-2] INFO  - Update data in table user. Id - 2
+12:00:27.320 [http-nio-8080-exec-2] INFO  - User (2 userId) update own profile.
+12:00:29.481 [http-nio-8080-exec-7] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:63) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:00:29.486 [http-nio-8080-exec-7] INFO  - Update data in table user. Id - 2
+12:00:29.486 [http-nio-8080-exec-7] INFO  - User (2 userId) update own profile.
+12:00:33.550 [http-nio-8080-exec-9] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:63) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:00:33.556 [http-nio-8080-exec-9] INFO  - Update data in table user. Id - 2
+12:00:33.557 [http-nio-8080-exec-9] INFO  - User (2 userId) update own profile.
+12:01:07.298 [http-nio-8080-exec-4] INFO  - User 2 logged in
+12:01:13.855 [http-nio-8080-exec-9] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:63) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:01:13.877 [http-nio-8080-exec-9] INFO  - Update data in table user. Id - 2
+12:01:13.877 [http-nio-8080-exec-9] INFO  - User (2 userId) update own profile.
+12:01:18.480 [http-nio-8080-exec-3] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:63) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:01:18.486 [http-nio-8080-exec-3] INFO  - Update data in table user. Id - 2
+12:01:18.486 [http-nio-8080-exec-3] INFO  - User (2 userId) update own profile.
+12:02:53.298 [http-nio-8080-exec-2] INFO  - User 2 logged in
+12:07:22.321 [http-nio-8080-exec-4] INFO  - User 2 logged in
+12:09:08.380 [http-nio-8080-exec-7] INFO  - User 2 logged in
+12:09:13.942 [http-nio-8080-exec-2] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:68) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:09:16.098 [http-nio-8080-exec-2] INFO  - Update data in table master. Id - 1
+12:09:16.106 [http-nio-8080-exec-2] INFO  - Update data in table user. Id - 2
+12:09:16.107 [http-nio-8080-exec-2] INFO  - User (2 userId) update own profile.
+12:18:55.969 [http-nio-8080-exec-2] INFO  - User 2 logged in
+12:19:41.376 [http-nio-8080-exec-6] INFO  - Master (2 userId) received data
+12:19:46.348 [http-nio-8080-exec-10] INFO  - Master (2 userId) received data
+12:23:56.027 [http-nio-8080-exec-8] INFO  - User 2 logged out
+12:29:18.294 [http-nio-8080-exec-1] INFO  - User 2 logged in
+12:29:26.218 [http-nio-8080-exec-5] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:74) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:29:27.180 [http-nio-8080-exec-5] INFO  - Update data in table master. Id - 1
+12:29:27.187 [http-nio-8080-exec-5] INFO  - Update data in table user. Id - 2
+12:29:27.188 [http-nio-8080-exec-5] INFO  - User (2 userId) update own profile.
+12:29:32.687 [http-nio-8080-exec-7] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:74) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:29:34.025 [http-nio-8080-exec-7] ERROR - Exception with work web.entities.Master entity
+web.exception.DBException: Exception with work web.entities.Master entity
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:99) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-5' for key 'master_has_category.PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1348) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:136) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:136) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.impl.AbstractDAOImpl.insOrUpDataInTableMToM(AbstractDAOImpl.java:436) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.update(AbstractDAOImpl.java:177) ~[classes/:?]
+	at web.service.MasterService.updateMaster(MasterService.java:25) ~[classes/:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:92) ~[classes/:?]
+	... 25 more
+12:30:29.073 [http-nio-8080-exec-3] INFO  - User 2 logged in
+12:30:48.668 [http-nio-8080-exec-9] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:74) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:32:13.925 [http-nio-8080-exec-5] INFO  - User 2 logged in
+12:32:17.864 [http-nio-8080-exec-9] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:74) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:32:18.742 [http-nio-8080-exec-9] INFO  - Update data in table master. Id - 1
+12:32:18.745 [http-nio-8080-exec-9] INFO  - Update data in table user. Id - 2
+12:32:18.746 [http-nio-8080-exec-9] INFO  - User (2 userId) update own profile.
+12:32:31.017 [http-nio-8080-exec-1] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:74) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:32:32.001 [http-nio-8080-exec-1] INFO  - Update data in table master. Id - 1
+12:32:32.008 [http-nio-8080-exec-1] INFO  - Update data in table user. Id - 2
+12:32:32.008 [http-nio-8080-exec-1] INFO  - User (2 userId) update own profile.
+12:33:20.767 [http-nio-8080-exec-5] INFO  - User 2 logged out
+12:37:37.123 [http-nio-8080-exec-2] INFO  - User 2 logged in
+12:37:50.183 [http-nio-8080-exec-7] INFO  - User 2 logged out
+12:38:00.219 [http-nio-8080-exec-10] INFO  - User 3 logged in
+12:39:19.632 [http-nio-8080-exec-7] INFO  - User 3 logged out
+12:39:24.130 [http-nio-8080-exec-9] INFO  - User 2 logged in
+12:41:22.444 [http-nio-8080-exec-3] INFO  - User 2 logged in
+12:41:25.663 [http-nio-8080-exec-6] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:75) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:42:07.396 [http-nio-8080-exec-3] INFO  - User 2 logged in
+12:42:51.239 [http-nio-8080-exec-7] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:75) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:44:33.402 [http-nio-8080-exec-2] INFO  - User 2 logged in
+12:44:52.259 [http-nio-8080-exec-6] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:75) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:50:45.331 [http-nio-8080-exec-2] INFO  - User 2 logged in
+12:51:06.599 [http-nio-8080-exec-9] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:75) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:51:06.819 [http-nio-8080-exec-9] INFO  - Update data in table master. Id - 1
+12:51:06.831 [http-nio-8080-exec-9] INFO  - Update data in table user. Id - 2
+12:51:06.832 [http-nio-8080-exec-9] INFO  - User (2 userId) update own profile.
+12:51:10.343 [http-nio-8080-exec-1] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:75) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:51:10.759 [http-nio-8080-exec-1] INFO  - Update data in table master. Id - 1
+12:51:10.764 [http-nio-8080-exec-1] INFO  - Update data in table user. Id - 2
+12:51:10.765 [http-nio-8080-exec-1] INFO  - User (2 userId) update own profile.
+12:51:14.910 [http-nio-8080-exec-3] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:75) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:51:15.328 [http-nio-8080-exec-3] INFO  - Update data in table master. Id - 1
+12:51:15.334 [http-nio-8080-exec-3] INFO  - Update data in table user. Id - 2
+12:51:15.335 [http-nio-8080-exec-3] INFO  - User (2 userId) update own profile.
+12:51:23.092 [http-nio-8080-exec-6] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:75) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:51:23.727 [http-nio-8080-exec-6] INFO  - Update data in table master. Id - 1
+12:51:23.733 [http-nio-8080-exec-6] INFO  - Update data in table user. Id - 2
+12:51:23.733 [http-nio-8080-exec-6] INFO  - User (2 userId) update own profile.
+12:51:28.143 [http-nio-8080-exec-8] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:75) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:51:28.553 [http-nio-8080-exec-8] INFO  - Update data in table master. Id - 1
+12:51:28.556 [http-nio-8080-exec-8] INFO  - Update data in table user. Id - 2
+12:51:28.556 [http-nio-8080-exec-8] INFO  - User (2 userId) update own profile.
+12:51:32.694 [http-nio-8080-exec-10] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:75) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:51:33.477 [http-nio-8080-exec-10] INFO  - Update data in table master. Id - 1
+12:51:33.482 [http-nio-8080-exec-10] INFO  - Update data in table user. Id - 2
+12:51:33.482 [http-nio-8080-exec-10] INFO  - User (2 userId) update own profile.
+12:51:40.010 [http-nio-8080-exec-2] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:75) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:52:23.651 [http-nio-8080-exec-5] INFO  - User 2 logged out
+12:53:49.998 [http-nio-8080-exec-10] INFO  - User 2 logged in
+12:53:55.412 [http-nio-8080-exec-4] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:75) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:54:37.284 [http-nio-8080-exec-3] INFO  - User 2 logged in
+12:54:46.928 [http-nio-8080-exec-7] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:75) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:54:47.049 [http-nio-8080-exec-7] INFO  - Update data in table master. Id - 1
+12:54:47.116 [http-nio-8080-exec-7] INFO  - Update data in table user. Id - 2
+12:54:47.117 [http-nio-8080-exec-7] INFO  - User (2 userId) update own profile.
+12:54:56.029 [http-nio-8080-exec-2] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:75) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:56:27.342 [http-nio-8080-exec-2] INFO  - User 2 logged in
+12:56:54.133 [http-nio-8080-exec-9] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:75) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:58:22.374 [http-nio-8080-exec-1] ERROR - Exception while getting data from table general_category method findElementById
+web.exception.DBException: Exception while getting data from table general_category method findElementById
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:40) [classes/:?]
+	at web.servlet.MainServlet.doGet(MainServlet.java:51) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLException: Operation not allowed after ResultSet closed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.checkClosed(ResultSetImpl.java:470) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.next(ResultSetImpl.java:1766) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DelegatingResultSet.next(DelegatingResultSet.java:1160) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.DelegatingResultSet.next(DelegatingResultSet.java:1160) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.impl.AbstractDAOImpl.findElementById(AbstractDAOImpl.java:83) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:283) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findAll(AbstractDAOImpl.java:107) ~[classes/:?]
+	at web.service.CategoryService.getAllCategories(CategoryService.java:20) ~[classes/:?]
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:35) ~[classes/:?]
+	... 25 more
+12:58:44.666 [http-nio-8080-exec-7] INFO  - User 2 logged in
+12:58:48.741 [http-nio-8080-exec-1] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:75) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:58:49.217 [http-nio-8080-exec-1] INFO  - Update data in table master. Id - 1
+12:58:49.388 [http-nio-8080-exec-1] INFO  - Update data in table user. Id - 2
+12:58:49.389 [http-nio-8080-exec-1] INFO  - User (2 userId) update own profile.
+12:58:53.114 [http-nio-8080-exec-3] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:75) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:58:53.714 [http-nio-8080-exec-3] INFO  - Update data in table master. Id - 1
+12:58:53.720 [http-nio-8080-exec-3] INFO  - Update data in table user. Id - 2
+12:58:53.721 [http-nio-8080-exec-3] INFO  - User (2 userId) update own profile.
+12:58:57.325 [http-nio-8080-exec-5] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:75) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:58:58.125 [http-nio-8080-exec-5] INFO  - Update data in table master. Id - 1
+12:58:58.131 [http-nio-8080-exec-5] INFO  - Update data in table user. Id - 2
+12:58:58.132 [http-nio-8080-exec-5] INFO  - User (2 userId) update own profile.
+12:59:01.459 [http-nio-8080-exec-7] ERROR - Problem with load new file. (2 userId)
+java.nio.file.DirectoryNotEmptyException: D:\JavaBasicEpam\Final Task\beaty\src\main\webapp\static\images
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3148) ~[?:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:75) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:59) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+12:59:01.974 [http-nio-8080-exec-7] INFO  - Update data in table master. Id - 1
+12:59:01.979 [http-nio-8080-exec-7] INFO  - Update data in table user. Id - 2
+12:59:01.980 [http-nio-8080-exec-7] INFO  - User (2 userId) update own profile.
+12:59:05.562 [http-nio-8080-exec-9] INFO  - User 2 logged out
+12:59:09.646 [http-nio-8080-exec-1] INFO  - User 2 logged in
+12:59:26.352 [http-nio-8080-exec-6] INFO  - User 2 logged out
+13:07:42.290 [http-nio-8080-exec-3] INFO  - User 2 logged in
+13:07:49.896 [http-nio-8080-exec-9] INFO  - Update data in table master. Id - 1
+13:07:49.905 [http-nio-8080-exec-9] INFO  - Update data in table user. Id - 2
+13:07:49.906 [http-nio-8080-exec-9] INFO  - User (2 userId) update own profile.
+13:08:01.911 [http-nio-8080-exec-5] INFO  - Update data in table master. Id - 1
+13:08:01.917 [http-nio-8080-exec-5] INFO  - Update data in table user. Id - 2
+13:08:01.918 [http-nio-8080-exec-5] INFO  - User (2 userId) update own profile.
+13:08:08.204 [http-nio-8080-exec-9] INFO  - Update data in table master. Id - 1
+13:08:08.211 [http-nio-8080-exec-9] INFO  - Update data in table user. Id - 2
+13:08:08.212 [http-nio-8080-exec-9] INFO  - User (2 userId) update own profile.
+13:08:12.788 [http-nio-8080-exec-1] INFO  - Update data in table master. Id - 1
+13:08:12.794 [http-nio-8080-exec-1] INFO  - Update data in table user. Id - 2
+13:08:12.794 [http-nio-8080-exec-1] INFO  - User (2 userId) update own profile.
+13:08:16.211 [http-nio-8080-exec-3] INFO  - Update data in table master. Id - 1
+13:08:16.218 [http-nio-8080-exec-3] INFO  - Update data in table user. Id - 2
+13:08:16.219 [http-nio-8080-exec-3] INFO  - User (2 userId) update own profile.
+13:08:18.937 [http-nio-8080-exec-6] INFO  - User 2 logged out
+13:09:07.148 [http-nio-8080-exec-10] INFO  - User 1 logged in
+13:12:20.640 [http-nio-8080-exec-3] INFO  - User 1 logged in
+13:12:23.459 [http-nio-8080-exec-7] INFO  - Update data in table user. Id - 1
+13:12:23.460 [http-nio-8080-exec-7] INFO  - User (1 userId) update own profile.
+13:12:24.615 [http-nio-8080-exec-9] INFO  - Update data in table user. Id - 1
+13:12:24.615 [http-nio-8080-exec-9] INFO  - User (1 userId) update own profile.
+13:12:28.743 [http-nio-8080-exec-1] INFO  - Update data in table user. Id - 1
+13:12:28.743 [http-nio-8080-exec-1] INFO  - User (1 userId) update own profile.
+13:12:29.579 [http-nio-8080-exec-3] INFO  - Update data in table user. Id - 1
+13:12:29.580 [http-nio-8080-exec-3] INFO  - User (1 userId) update own profile.
+13:12:30.409 [http-nio-8080-exec-4] INFO  - Update data in table user. Id - 1
+13:12:30.409 [http-nio-8080-exec-4] INFO  - User (1 userId) update own profile.
+13:12:31.133 [http-nio-8080-exec-6] INFO  - Update data in table user. Id - 1
+13:12:31.134 [http-nio-8080-exec-6] INFO  - User (1 userId) update own profile.
+13:12:37.717 [http-nio-8080-exec-2] INFO  - Admin (1 userId) received data
+13:12:51.333 [http-nio-8080-exec-10] INFO  - User 1 logged out
+14:22:21.915 [http-nio-8080-exec-1] INFO  - User 1 logged in
+14:24:14.296 [http-nio-8080-exec-6] INFO  - User 1 logged out
+14:24:21.041 [http-nio-8080-exec-10] INFO  - User 1 logged in
+14:39:12.939 [http-nio-8080-exec-2] INFO  - User 1 logged in
+14:39:31.914 [http-nio-8080-exec-9] INFO  - Update data in table user. Id - 1
+14:39:31.914 [http-nio-8080-exec-9] INFO  - User (1 userId) update own profile.
+14:39:43.196 [http-nio-8080-exec-8] INFO  - Admin (1 userId) received data
+14:40:17.335 [http-nio-8080-exec-7] INFO  - Admin (1 userId) received data
+14:40:51.095 [http-nio-8080-exec-3] INFO  - Created new user (null userId).
+14:42:26.301 [http-nio-8080-exec-2] INFO  - User 1 logged in
+14:42:28.417 [http-nio-8080-exec-4] INFO  - Admin (1 userId) received data
+14:42:32.307 [http-nio-8080-exec-6] INFO  - User 1 logged out
+14:42:37.420 [http-nio-8080-exec-8] INFO  - User 1 logged in
+14:43:04.542 [http-nio-8080-exec-5] INFO  - Insert new data in table user. Id - 10
+14:43:04.625 [http-nio-8080-exec-5] INFO  - Insert new data in table master. Id - 7
+14:43:04.626 [http-nio-8080-exec-5] INFO  - Created new user (10 userId).
+14:43:31.527 [http-nio-8080-exec-9] INFO  - Admin (1 userId) received data
+14:43:36.498 [http-nio-8080-exec-4] INFO  - User 1 logged out
+14:43:45.988 [http-nio-8080-exec-5] INFO  - User 10 logged in
+14:43:57.351 [http-nio-8080-exec-10] INFO  - Update data in table master. Id - 7
+14:43:57.356 [http-nio-8080-exec-10] INFO  - Update data in table user. Id - 10
+14:43:57.357 [http-nio-8080-exec-10] INFO  - User (10 userId) update own profile.
+14:44:15.668 [http-nio-8080-exec-3] INFO  - Update data in table master. Id - 7
+14:44:15.674 [http-nio-8080-exec-3] INFO  - Update data in table user. Id - 10
+14:44:15.675 [http-nio-8080-exec-3] INFO  - User (10 userId) update own profile.
+14:44:31.870 [http-nio-8080-exec-5] INFO  - Update data in table master. Id - 7
+14:44:31.876 [http-nio-8080-exec-5] INFO  - Update data in table user. Id - 10
+14:44:31.877 [http-nio-8080-exec-5] INFO  - User (10 userId) update own profile.
+14:44:38.678 [http-nio-8080-exec-8] INFO  - Update data in table master. Id - 7
+14:44:38.683 [http-nio-8080-exec-8] INFO  - Update data in table user. Id - 10
+14:44:38.684 [http-nio-8080-exec-8] INFO  - User (10 userId) update own profile.
+14:44:42.782 [http-nio-8080-exec-1] INFO  - Update data in table master. Id - 7
+14:44:42.787 [http-nio-8080-exec-1] INFO  - Update data in table user. Id - 10
+14:44:42.787 [http-nio-8080-exec-1] INFO  - User (10 userId) update own profile.
+14:44:50.227 [http-nio-8080-exec-10] INFO  - Update data in table master. Id - 7
+14:44:50.229 [http-nio-8080-exec-10] INFO  - Update data in table user. Id - 10
+14:44:50.229 [http-nio-8080-exec-10] INFO  - User (10 userId) update own profile.
+14:45:13.794 [http-nio-8080-exec-2] INFO  - User 10 logged out
+16:27:25.419 [http-nio-8080-exec-1] ERROR - Exception while getting data from table category method readNextElement
+web.exception.DBException: Exception while getting data from table category method readNextElement
+	at web.controller.commads.CategoryController.execute(CategoryController.java:157) [classes/:?]
+	at web.servlet.MainServlet.doGet(MainServlet.java:18) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLException: Operation not allowed after ResultSet closed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.checkClosed(ResultSetImpl.java:470) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:577) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:843) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DelegatingResultSet.getInt(DelegatingResultSet.java:633) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.DelegatingResultSet.getInt(DelegatingResultSet.java:633) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:267) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findElementById(AbstractDAOImpl.java:83) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:315) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findElementsBySQlRequest(AbstractDAOImpl.java:60) ~[classes/:?]
+	at web.service.MasterService.getAllMasterBySQLRequest(MasterService.java:57) ~[classes/:?]
+	at web.controller.commads.CategoryController.execute(CategoryController.java:150) ~[classes/:?]
+	... 25 more
+16:28:39.516 [http-nio-8080-exec-8] INFO  - User 9 logged in
+16:28:44.922 [http-nio-8080-exec-2] INFO  - Update data in table user. Id - 9
+16:28:44.923 [http-nio-8080-exec-2] INFO  - User (9 userId) update own profile.
+16:28:48.167 [http-nio-8080-exec-4] INFO  - Update data in table user. Id - 9
+16:28:48.168 [http-nio-8080-exec-4] INFO  - User (9 userId) update own profile.
+16:29:09.779 [http-nio-8080-exec-1] INFO  - Insert new data in table orders. Id - 8
+16:29:09.780 [http-nio-8080-exec-1] INFO  - User (9 userId) made new recording (8 orderId).
+16:29:28.051 [http-nio-8080-exec-9] INFO  - User 4 logged in
+16:29:33.784 [http-nio-8080-exec-5] INFO  - Master (4 userId) received data
+16:29:39.523 [http-nio-8080-exec-8] INFO  - Update data in table orders. Id - 8
+16:29:39.524 [http-nio-8080-exec-8] INFO  - Admin (4 userId) update 8 order.
+16:29:39.646 [http-nio-8080-exec-8] INFO  - Master (4 userId) received data
+16:29:48.562 [http-nio-8080-exec-4] INFO  - User 9 logged in
+16:30:00.391 [http-nio-8080-exec-1] INFO  - User 9 left a rating 8 order.
+16:30:02.154 [http-nio-8080-exec-1] INFO  - Update data in table master. Id - 3
+16:30:15.867 [http-nio-8080-exec-8] INFO  - User 4 logged in
+19:51:09.429 [http-nio-8080-exec-6] INFO  - Insert new data in table user. Id - 10
+19:51:09.734 [http-nio-8080-exec-6] INFO  - Insert new data in table client. Id - 3
+19:51:09.735 [http-nio-8080-exec-6] INFO  - Created new user (10 userId).
+19:51:32.113 [http-nio-8080-exec-5] INFO  - User 1 logged in
+19:53:00.646 [http-nio-8080-exec-4] INFO  - User 1 logged in
+19:54:43.184 [http-nio-8080-exec-7] INFO  - User 1 logged in
+19:56:16.950 [http-nio-8080-exec-3] INFO  - User 1 logged in
+19:57:31.781 [http-nio-8080-exec-4] INFO  - User 1 logged in
+19:57:32.473 [http-nio-8080-exec-3] INFO  - User 1 logged in
+19:59:53.325 [http-nio-8080-exec-4] INFO  - User 1 logged in
+20:00:52.566 [http-nio-8080-exec-1] INFO  - User 1 logged in
+21:28:29.279 [http-nio-8080-exec-4] INFO  - User 1 logged in
+21:50:57.096 [http-nio-8080-exec-5] ERROR - Exception while count data from table master method countAllElement with parametrs
+web.exception.DBException: Exception while count data from table master method countAllElement with parametrs
+	at web.controller.commads.CategoryController.execute(CategoryController.java:157) [classes/:?]
+	at web.servlet.MainServlet.doGet(MainServlet.java:18) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:21) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sdgsfgsh' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:122) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:122) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.impl.AbstractDAOImpl.countAllElement(AbstractDAOImpl.java:244) ~[classes/:?]
+	at web.service.MasterService.countMaster(MasterService.java:52) ~[classes/:?]
+	at web.controller.commads.CategoryController.execute(CategoryController.java:132) ~[classes/:?]
+	... 28 more
+22:03:14.361 [http-nio-8080-exec-8] ERROR - Exception while getting data from table master method findElementsBySQlRequest
+web.exception.DBException: Exception while getting data from table master method findElementsBySQlRequest
+	at web.controller.commads.CategoryController.execute(CategoryController.java:157) [classes/:?]
+	at web.servlet.MainServlet.doGet(MainServlet.java:18) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:21) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-18,3' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:122) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:122) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.impl.AbstractDAOImpl.findElementsBySQlRequest(AbstractDAOImpl.java:58) ~[classes/:?]
+	at web.service.MasterService.getAllMasterBySQLRequest(MasterService.java:57) ~[classes/:?]
+	at web.controller.commads.CategoryController.execute(CategoryController.java:150) ~[classes/:?]
+	... 28 more
+10:57:19.773 [http-nio-8080-exec-4] ERROR - Exception while getting data from table master method findElementsBySQlRequest
+web.exception.DBException: Exception while getting data from table master method findElementsBySQlRequest
+	at web.controller.commads.CategoryController.execute(CategoryController.java:157) [classes/:?]
+	at web.servlet.MainServlet.doGet(MainServlet.java:18) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:29) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-18,3' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:122) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:122) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.impl.AbstractDAOImpl.findElementsBySQlRequest(AbstractDAOImpl.java:58) ~[classes/:?]
+	at web.service.MasterService.getAllMasterBySQLRequest(MasterService.java:57) ~[classes/:?]
+	at web.controller.commads.CategoryController.execute(CategoryController.java:150) ~[classes/:?]
+	... 29 more
+11:40:14.204 [http-nio-8080-exec-5] INFO  - User 9 logged in
+11:42:00.750 [http-nio-8080-exec-3] INFO  - User 9 logged in
+11:44:08.155 [http-nio-8080-exec-9] INFO  - User 1 logged in
+11:44:18.606 [http-nio-8080-exec-3] INFO  - Admin (1 userId) received data
+12:44:17.757 [http-nio-8080-exec-2] INFO  - User 9 logged in
+12:46:13.797 [http-nio-8080-exec-3] INFO  - User 2 logged in
+12:47:42.969 [http-nio-8080-exec-3] INFO  - User 9 logged in
+12:52:41.600 [http-nio-8080-exec-8] INFO  - Insert new data in table orders. Id - 9
+12:52:41.601 [http-nio-8080-exec-8] INFO  - User (9 userId) made new recording (9 orderId).
+12:52:52.227 [http-nio-8080-exec-4] INFO  - User 9 logged out
+13:22:20.881 [http-nio-8080-exec-1] INFO  - User 1 logged in
+16:32:14.020 [http-nio-8080-exec-1] INFO  - User 1 logged in
+16:32:24.692 [http-nio-8080-exec-9] INFO  - User 1 logged out
+16:32:31.728 [http-nio-8080-exec-10] INFO  - User 1 logged in
+16:33:47.270 [http-nio-8080-exec-4] INFO  - User 1 logged out
+16:33:52.904 [http-nio-8080-exec-5] INFO  - User 2 logged in
+16:33:58.703 [http-nio-8080-exec-2] INFO  - Master (2 userId) received data
+16:34:02.216 [http-nio-8080-exec-1] INFO  - User 2 logged out
+16:34:08.412 [http-nio-8080-exec-7] INFO  - User 1 logged in
+16:34:16.791 [http-nio-8080-exec-1] INFO  - User 1 logged out
+16:34:25.474 [http-nio-8080-exec-7] INFO  - User 9 logged in
+16:34:33.479 [http-nio-8080-exec-8] INFO  - User 9 logged out
+17:10:10.542 [http-nio-8080-exec-7] INFO  - User 1 logged in
+17:10:18.317 [http-nio-8080-exec-4] INFO  - Admin (1 userId) received data
+17:20:32.823 [http-nio-8080-exec-6] INFO  - User 1 logged in
+17:20:34.875 [http-nio-8080-exec-8] INFO  - User 1 logged out
+17:20:40.811 [http-nio-8080-exec-10] INFO  - User 1 logged in
+17:20:42.547 [http-nio-8080-exec-4] INFO  - User 1 logged out
+17:26:57.068 [http-nio-8080-exec-7] INFO  - User 1 logged in
+17:32:17.026 [http-nio-8080-exec-4] INFO  - User 1 logged in
+17:37:15.780 [http-nio-8080-exec-6] INFO  - User 9 logged in
+17:38:09.586 [http-nio-8080-exec-6] INFO  - User 9 logged out
+17:38:15.911 [http-nio-8080-exec-9] INFO  - User 2 logged in
+17:38:37.116 [http-nio-8080-exec-4] INFO  - Master (2 userId) received data
+17:38:43.415 [http-nio-8080-exec-6] INFO  - Update data in table orders. Id - 5
+17:38:43.416 [http-nio-8080-exec-6] INFO  - Admin (2 userId) update 5 order.
+17:38:43.584 [http-nio-8080-exec-6] INFO  - Master (2 userId) received data
+17:38:50.620 [http-nio-8080-exec-9] INFO  - User 2 logged out
+17:38:56.097 [http-nio-8080-exec-3] INFO  - User 1 logged in
+17:39:10.245 [http-nio-8080-exec-8] INFO  - Admin (1 userId) received data
+17:39:32.327 [http-nio-8080-exec-1] INFO  - User 1 logged out
+17:40:33.810 [http-nio-8080-exec-9] INFO  - User 1 logged in
+17:40:37.001 [http-nio-8080-exec-1] INFO  - Admin (1 userId) received data
+17:40:57.471 [http-nio-8080-exec-6] INFO  - User 1 logged out
+17:43:16.916 [http-nio-8080-exec-10] INFO  - User 1 logged in
+17:43:20.725 [http-nio-8080-exec-3] INFO  - Admin (1 userId) received data
+17:46:37.066 [http-nio-8080-exec-4] INFO  - Admin (1 userId) received data
+17:47:21.544 [http-nio-8080-exec-2] INFO  - Admin (1 userId) received data
+17:47:27.289 [http-nio-8080-exec-9] INFO  - Admin (1 userId) received data
+17:47:38.989 [http-nio-8080-exec-8] INFO  - Admin (1 userId) received data
+17:47:40.468 [http-nio-8080-exec-9] INFO  - Admin (1 userId) received data
+17:49:07.622 [http-nio-8080-exec-10] INFO  - Admin (1 userId) received data
+17:54:37.362 [http-nio-8080-exec-10] INFO  - User 9 logged in
+17:58:21.803 [http-nio-8080-exec-3] INFO  - User 9 logged out
+17:58:36.162 [http-nio-8080-exec-8] INFO  - User 2 logged in
+17:58:43.929 [http-nio-8080-exec-1] INFO  - Master (2 userId) received data
+17:58:46.285 [http-nio-8080-exec-5] INFO  - Master (2 userId) received data
+17:58:55.147 [http-nio-8080-exec-1] INFO  - User 2 logged out
+18:07:47.410 [http-nio-8080-exec-9] INFO  - User 9 logged in
+18:33:53.934 [http-nio-8080-exec-10] INFO  - User 9 logged out
+18:34:00.541 [http-nio-8080-exec-4] INFO  - User 1 logged in
+18:34:21.477 [http-nio-8080-exec-5] INFO  - Admin (1 userId) received data
+18:34:28.053 [http-nio-8080-exec-8] INFO  - User 1 logged out
+18:36:34.343 [http-nio-8080-exec-1] INFO  - User 9 logged in
+18:37:32.075 [http-nio-8080-exec-4] INFO  - User 9 logged out
+18:39:04.719 [http-nio-8080-exec-1] INFO  - User 9 logged in
+18:39:15.374 [http-nio-8080-exec-7] INFO  - Update data in table user. Id - 9
+18:39:15.374 [http-nio-8080-exec-7] INFO  - User (9 userId) update own profile.
+18:39:52.503 [http-nio-8080-exec-8] INFO  - Insert new data in table orders. Id - 10
+18:39:52.504 [http-nio-8080-exec-8] INFO  - User (9 userId) made new recording (10 orderId).
+18:40:16.716 [http-nio-8080-exec-10] INFO  - Insert new data in table comment. Id - 2
+18:40:16.717 [http-nio-8080-exec-10] INFO  - User 9 left a comment 8 order.
+18:40:26.361 [http-nio-8080-exec-5] INFO  - Delete data in table comment. Id - 2
+18:40:26.535 [http-nio-8080-exec-5] INFO  - Insert new data in table comment. Id - 3
+18:40:26.535 [http-nio-8080-exec-5] INFO  - User 9 left a comment 8 order.
+18:40:41.635 [http-nio-8080-exec-5] INFO  - User 9 logged out
+18:46:46.508 [http-nio-8080-exec-10] INFO  - User 9 logged in
+18:47:47.149 [http-nio-8080-exec-5] INFO  - User 9 left a rating 8 order.
+18:47:49.173 [http-nio-8080-exec-5] INFO  - Update data in table master. Id - 3
+18:47:49.257 [http-nio-8080-exec-5] INFO  - Delete data in table comment. Id - 3
+18:47:49.300 [http-nio-8080-exec-5] INFO  - Insert new data in table comment. Id - 4
+18:47:49.301 [http-nio-8080-exec-5] INFO  - User 9 left a comment 8 order.
+18:47:57.875 [http-nio-8080-exec-2] INFO  - User 9 logged out
+18:48:04.410 [http-nio-8080-exec-4] INFO  - User 2 logged in
+18:48:07.279 [http-nio-8080-exec-6] INFO  - Master (2 userId) received data
+18:48:50.268 [http-nio-8080-exec-2] INFO  - User 2 logged out
+18:49:05.392 [http-nio-8080-exec-3] INFO  - User 1 logged in
+18:49:09.018 [http-nio-8080-exec-8] INFO  - Admin (1 userId) received data
+18:49:48.606 [http-nio-8080-exec-1] INFO  - User 1 logged out
+18:50:15.031 [http-nio-8080-exec-6] INFO  - User 2 logged in
+18:53:00.846 [http-nio-8080-exec-3] INFO  - User 2 logged out
+18:53:05.753 [http-nio-8080-exec-4] INFO  - User 9 logged in
+18:53:11.615 [http-nio-8080-exec-9] INFO  - Update data in table user. Id - 9
+18:53:11.615 [http-nio-8080-exec-9] INFO  - User (9 userId) update own profile.
+18:53:29.754 [http-nio-8080-exec-2] INFO  - Insert new data in table orders. Id - 11
+18:53:29.755 [http-nio-8080-exec-2] INFO  - User (9 userId) made new recording (11 orderId).
+18:53:50.189 [http-nio-8080-exec-6] INFO  - User 9 left a rating 8 order.
+18:53:51.199 [http-nio-8080-exec-6] INFO  - Update data in table master. Id - 3
+18:53:51.348 [http-nio-8080-exec-6] INFO  - Delete data in table comment. Id - 4
+18:53:51.455 [http-nio-8080-exec-6] INFO  - Insert new data in table comment. Id - 5
+18:53:51.455 [http-nio-8080-exec-6] INFO  - User 9 left a comment 8 order.
+18:53:53.542 [http-nio-8080-exec-9] INFO  - User 9 logged out
+18:53:57.958 [http-nio-8080-exec-1] INFO  - User 2 logged in
+18:54:05.415 [http-nio-8080-exec-6] INFO  - Update data in table master. Id - 1
+18:54:05.516 [http-nio-8080-exec-6] INFO  - Update data in table user. Id - 2
+18:54:05.517 [http-nio-8080-exec-6] INFO  - User (2 userId) update own profile.
+18:54:18.562 [http-nio-8080-exec-8] INFO  - Update data in table master. Id - 1
+18:54:18.600 [http-nio-8080-exec-8] INFO  - Update data in table user. Id - 2
+18:54:18.600 [http-nio-8080-exec-8] INFO  - User (2 userId) update own profile.
+18:54:27.649 [http-nio-8080-exec-10] INFO  - Update data in table master. Id - 1
+18:54:27.652 [http-nio-8080-exec-10] INFO  - Update data in table user. Id - 2
+18:54:27.652 [http-nio-8080-exec-10] INFO  - User (2 userId) update own profile.
+18:54:40.751 [http-nio-8080-exec-8] INFO  - User 2 logged out
+18:54:46.055 [http-nio-8080-exec-3] INFO  - User 1 logged in
+18:55:03.980 [http-nio-8080-exec-7] INFO  - Admin (1 userId) received data
+18:55:17.872 [http-nio-8080-exec-1] INFO  - Delete data in table orders. Id - 10
+18:55:17.872 [http-nio-8080-exec-1] INFO  - Admin 1 deleted 10 order.
+18:55:18.015 [http-nio-8080-exec-1] INFO  - Admin (1 userId) received data
+18:55:21.723 [http-nio-8080-exec-3] INFO  - Update data in table orders. Id - 11
+18:55:21.726 [http-nio-8080-exec-3] INFO  - Admin 1 update 11 order.
+18:55:21.883 [http-nio-8080-exec-3] INFO  - Admin (1 userId) received data
+18:55:28.145 [http-nio-8080-exec-5] INFO  - Admin (1 userId) received data
+18:55:38.226 [http-nio-8080-exec-9] INFO  - User 1 logged out
+21:32:07.338 [http-nio-8080-exec-9] INFO  - User 9 logged in
+21:40:24.131 [http-nio-8080-exec-1] INFO  - Update data in table user. Id - 9
+21:40:24.132 [http-nio-8080-exec-1] INFO  - User (9 userId) update own profile.
+21:41:01.718 [http-nio-8080-exec-1] INFO  - User 9 logged out
+21:41:06.381 [http-nio-8080-exec-3] INFO  - User 2 logged in
+21:51:24.242 [http-nio-8080-exec-1] INFO  - User 2 logged in
+21:52:15.785 [http-nio-8080-exec-4] INFO  - Master (2 userId) received data
+21:53:40.865 [http-nio-8080-exec-9] INFO  - Update data in table master. Id - 1
+21:53:40.870 [http-nio-8080-exec-9] INFO  - Update data in table user. Id - 2
+21:53:40.871 [http-nio-8080-exec-9] INFO  - User (2 userId) update own profile.
+21:53:51.831 [http-nio-8080-exec-5] INFO  - User 2 logged out
+21:54:00.426 [http-nio-8080-exec-4] INFO  - User 1 logged in
+21:54:12.415 [http-nio-8080-exec-7] INFO  - Admin (1 userId) received data
+21:54:27.697 [http-nio-8080-exec-8] INFO  - User 1 logged out
+21:54:31.914 [http-nio-8080-exec-6] INFO  - User 9 logged in
+21:55:19.909 [http-nio-8080-exec-3] INFO  - Delete data in table comment. Id - 5
+21:55:20.139 [http-nio-8080-exec-3] INFO  - Insert new data in table comment. Id - 6
+21:55:20.139 [http-nio-8080-exec-3] INFO  - User 9 left a comment 8 order.
+21:55:25.912 [http-nio-8080-exec-4] INFO  - User 9 logged out
+21:55:31.919 [http-nio-8080-exec-10] INFO  - User 1 logged in
+21:55:37.380 [http-nio-8080-exec-8] INFO  - Admin (1 userId) received data
+21:55:47.950 [http-nio-8080-exec-5] INFO  - Delete data in table orders. Id - 8
+21:55:47.952 [http-nio-8080-exec-5] INFO  - Admin 1 deleted 8 order.
+21:55:48.131 [http-nio-8080-exec-5] INFO  - Admin (1 userId) received data
+21:55:56.095 [http-nio-8080-exec-9] INFO  - User 1 logged out
+21:56:01.547 [http-nio-8080-exec-3] INFO  - User 9 logged in
+21:56:12.147 [http-nio-8080-exec-9] INFO  - Insert new data in table comment. Id - 7
+21:56:12.148 [http-nio-8080-exec-9] INFO  - User 9 left a comment 11 order.
+21:56:16.125 [http-nio-8080-exec-7] INFO  - User 9 logged out
+21:56:21.554 [http-nio-8080-exec-3] INFO  - User 1 logged in
+21:56:37.559 [http-nio-8080-exec-6] INFO  - Admin (1 userId) received data
+21:58:16.154 [http-nio-8080-exec-7] INFO  - User 1 logged in
+21:58:19.380 [http-nio-8080-exec-1] INFO  - Admin (1 userId) received data
+10:02:48.252 [http-nio-8080-exec-8] INFO  - User 9 logged in
+10:03:03.707 [http-nio-8080-exec-6] INFO  - User 9 logged out
+10:03:08.793 [http-nio-8080-exec-8] INFO  - User 9 logged in
+10:04:02.104 [http-nio-8080-exec-1] INFO  - User 9 logged out
+10:10:09.189 [http-nio-8080-exec-3] INFO  - User 9 logged in
+10:10:31.929 [http-nio-8080-exec-3] INFO  - User 9 logged out
+10:10:41.921 [http-nio-8080-exec-6] INFO  - User 2 logged in
+10:10:54.293 [http-nio-8080-exec-4] INFO  - Master (2 userId) received data
+10:10:56.977 [http-nio-8080-exec-7] INFO  - Master (2 userId) received data
+10:10:59.014 [http-nio-8080-exec-9] INFO  - Master (2 userId) received data
+10:15:33.358 [http-nio-8080-exec-2] INFO  - Master (2 userId) received data
+10:15:37.468 [http-nio-8080-exec-5] INFO  - Master (2 userId) received data
+10:15:38.979 [http-nio-8080-exec-7] INFO  - Master (2 userId) received data
+10:15:40.650 [http-nio-8080-exec-9] INFO  - Master (2 userId) received data
+10:15:43.275 [http-nio-8080-exec-3] INFO  - Master (2 userId) received data
+10:15:49.266 [http-nio-8080-exec-6] INFO  - Master (2 userId) received data
+10:15:51.000 [http-nio-8080-exec-8] INFO  - Master (2 userId) received data
+10:15:53.113 [http-nio-8080-exec-10] INFO  - User 2 logged out
+10:16:02.647 [http-nio-8080-exec-3] INFO  - User 2 logged in
+10:16:04.725 [http-nio-8080-exec-7] INFO  - Master (2 userId) received data
+10:16:06.603 [http-nio-8080-exec-10] INFO  - Master (2 userId) received data
+10:18:46.467 [http-nio-8080-exec-5] INFO  - User 2 logged out
+10:18:53.438 [http-nio-8080-exec-7] INFO  - User 9 logged in
+10:19:13.009 [http-nio-8080-exec-1] INFO  - User 9 logged out
+10:19:20.271 [http-nio-8080-exec-4] INFO  - User 9 logged in
+10:20:28.608 [http-nio-8080-exec-1] INFO  - User 9 logged out
+10:21:35.219 [http-nio-8080-exec-6] INFO  - User 9 logged in
+10:35:28.974 [http-nio-8080-exec-3] INFO  - User 9 logged out
+10:35:32.740 [http-nio-8080-exec-5] INFO  - User 9 logged in
+10:37:21.742 [http-nio-8080-exec-8] INFO  - User 9 logged out
+10:37:25.699 [http-nio-8080-exec-10] INFO  - User 9 logged in
+10:37:32.479 [http-nio-8080-exec-8] INFO  - User 9 logged out
+10:37:36.547 [http-nio-8080-exec-10] INFO  - User 2 logged in
+10:37:37.599 [http-nio-8080-exec-2] INFO  - Master (2 userId) received data
+10:37:41.595 [http-nio-8080-exec-4] INFO  - Master (2 userId) received data
+10:37:43.474 [http-nio-8080-exec-6] INFO  - Master (2 userId) received data
+10:37:48.956 [http-nio-8080-exec-8] INFO  - Master (2 userId) received data
+10:37:51.452 [http-nio-8080-exec-10] INFO  - Master (2 userId) received data
+10:40:32.095 [http-nio-8080-exec-6] INFO  - User 9 logged in
+10:40:32.095 [http-nio-8080-exec-7] INFO  - User 9 logged in
+10:40:32.095 [http-nio-8080-exec-5] INFO  - User 9 logged in
+10:43:04.706 [http-nio-8080-exec-5] INFO  - User 9 logged out
+10:43:10.744 [http-nio-8080-exec-8] INFO  - User 2 logged in
+10:43:14.882 [http-nio-8080-exec-4] INFO  - Master (2 userId) received data
+10:43:16.586 [http-nio-8080-exec-5] INFO  - Master (2 userId) received data
+10:43:17.902 [http-nio-8080-exec-8] INFO  - Master (2 userId) received data
+10:44:11.001 [http-nio-8080-exec-4] INFO  - User 2 logged out
+10:44:17.355 [http-nio-8080-exec-5] INFO  - User 2 logged in
+10:44:21.188 [http-nio-8080-exec-8] INFO  - Master (2 userId) received data
+10:44:32.444 [http-nio-8080-exec-10] INFO  - User 2 logged out
+10:44:44.929 [http-nio-8080-exec-2] INFO  - User 3 logged in
+10:44:47.400 [http-nio-8080-exec-6] INFO  - Master (3 userId) received data
+10:44:51.105 [http-nio-8080-exec-7] INFO  - Master (3 userId) received data
+10:44:55.663 [http-nio-8080-exec-1] INFO  - Master (3 userId) received data
+10:44:56.710 [http-nio-8080-exec-3] INFO  - User 3 logged out
+10:45:00.967 [http-nio-8080-exec-6] INFO  - User 1 logged in
+10:45:03.845 [http-nio-8080-exec-9] INFO  - Admin (1 userId) received data
+10:45:27.231 [http-nio-8080-exec-4] INFO  - Admin (1 userId) received data
+10:46:05.166 [http-nio-8080-exec-7] INFO  - User 1 logged out
+11:02:37.291 [http-nio-8080-exec-5] INFO  - User 9 logged in
+11:02:52.619 [http-nio-8080-exec-9] INFO  - User 9 logged out
+11:02:58.826 [http-nio-8080-exec-1] INFO  - User 2 logged in
+11:02:59.894 [http-nio-8080-exec-3] INFO  - Master (2 userId) received data
+11:04:19.213 [http-nio-8080-exec-7] INFO  - Master (2 userId) received data
+11:05:58.640 [http-nio-8080-exec-1] INFO  - Master (2 userId) received data
+11:11:20.022 [http-nio-8080-exec-6] INFO  - Master (2 userId) received data
+11:11:25.769 [http-nio-8080-exec-10] INFO  - Master (2 userId) received data
+11:11:43.281 [http-nio-8080-exec-3] INFO  - Master (2 userId) received data
+11:11:45.084 [http-nio-8080-exec-5] INFO  - Master (2 userId) received data
+11:11:47.554 [http-nio-8080-exec-9] INFO  - Master (2 userId) received data
+11:11:51.815 [http-nio-8080-exec-2] INFO  - Master (2 userId) received data
+11:11:56.680 [http-nio-8080-exec-4] INFO  - Master (2 userId) received data
+11:12:38.441 [http-nio-8080-exec-8] INFO  - Master (2 userId) received data
+11:21:50.866 [http-nio-8080-exec-2] INFO  - User 9 logged in
+11:23:27.841 [http-nio-8080-exec-6] INFO  - User 9 logged in
+11:25:28.714 [http-nio-8080-exec-4] INFO  - User 9 logged out
+11:25:32.789 [http-nio-8080-exec-8] INFO  - User 2 logged in
+11:25:33.948 [http-nio-8080-exec-10] INFO  - Master (2 userId) received data
+11:29:13.092 [http-nio-8080-exec-1] INFO  - User 9 logged in
+11:32:31.335 [http-nio-8080-exec-4] INFO  - Delete data in table comment. Id - 7
+11:32:31.741 [http-nio-8080-exec-4] INFO  - Insert new data in table comment. Id - 8
+11:32:31.742 [http-nio-8080-exec-4] INFO  - User 9 left a comment 11 order.
+11:33:00.413 [http-nio-8080-exec-2] INFO  - User 9 logged out
+11:33:05.118 [http-nio-8080-exec-3] INFO  - User 2 logged in
+11:33:26.173 [http-nio-8080-exec-2] INFO  - Master (2 userId) received data
+11:33:35.059 [http-nio-8080-exec-6] INFO  - User 2 logged out
+11:33:40.960 [http-nio-8080-exec-8] INFO  - User 1 logged in
+11:33:44.349 [http-nio-8080-exec-2] INFO  - Admin (1 userId) received data
+11:35:47.766 [http-nio-8080-exec-5] INFO  - User 1 logged in
+11:35:55.598 [http-nio-8080-exec-8] INFO  - Admin (1 userId) received data
+11:36:36.699 [http-nio-8080-exec-3] INFO  - Admin (1 userId) received data
+11:36:44.362 [http-nio-8080-exec-8] INFO  - Admin (1 userId) received data
+11:36:49.285 [http-nio-8080-exec-2] INFO  - User 1 logged out
+11:36:53.944 [http-nio-8080-exec-4] INFO  - User 2 logged in
+11:36:55.191 [http-nio-8080-exec-10] INFO  - Master (2 userId) received data
+11:38:35.062 [http-nio-8080-exec-8] INFO  - User 1 logged in
+11:38:37.699 [http-nio-8080-exec-10] INFO  - Admin (1 userId) received data
+11:41:12.971 [http-nio-8080-exec-2] INFO  - Admin (1 userId) received data
+11:43:12.872 [http-nio-8080-exec-8] INFO  - Update data in table orders. Id - 11
+11:43:12.873 [http-nio-8080-exec-8] INFO  - Admin 1 update 11 order.
+11:43:13.101 [http-nio-8080-exec-8] INFO  - Admin (1 userId) received data
+11:43:18.975 [http-nio-8080-exec-9] INFO  - Update data in table orders. Id - 11
+11:43:18.976 [http-nio-8080-exec-9] INFO  - Admin 1 update 11 order.
+11:43:19.220 [http-nio-8080-exec-9] INFO  - Admin (1 userId) received data
+11:47:30.534 [http-nio-8080-exec-3] INFO  - User 1 logged out
+11:48:59.631 [http-nio-8080-exec-6] INFO  - User 1 logged in
+11:49:02.475 [http-nio-8080-exec-1] INFO  - Admin (1 userId) received data
+11:49:07.450 [http-nio-8080-exec-2] INFO  - User 1 logged out
+11:49:11.600 [http-nio-8080-exec-4] INFO  - User 9 logged in
+11:50:15.819 [http-nio-8080-exec-10] INFO  - User 9 logged out
+11:50:20.245 [http-nio-8080-exec-7] INFO  - User 1 logged in
+11:50:22.727 [http-nio-8080-exec-1] INFO  - Admin (1 userId) received data
+11:55:30.364 [http-nio-8080-exec-3] INFO  - Admin (1 userId) received data
+11:55:32.858 [http-nio-8080-exec-10] INFO  - User 1 logged out
+11:55:37.923 [http-nio-8080-exec-7] INFO  - User 2 logged in
+11:55:40.302 [http-nio-8080-exec-2] INFO  - Master (2 userId) received data
+11:56:20.044 [http-nio-8080-exec-10] INFO  - Master (2 userId) received data
+11:56:23.632 [http-nio-8080-exec-7] INFO  - User 2 logged out
+11:56:27.989 [http-nio-8080-exec-1] INFO  - User 9 logged in
+11:56:45.172 [http-nio-8080-exec-10] INFO  - User 9 logged out
+12:53:43.088 [http-nio-8080-exec-10] INFO  - User 9 logged in
+12:54:13.077 [http-nio-8080-exec-4] INFO  - Update data in table user. Id - 9
+12:54:13.077 [http-nio-8080-exec-4] INFO  - User (9 userId) update own profile.
+12:58:15.497 [http-nio-8080-exec-5] INFO  - Insert new data in table orders. Id - 12
+12:58:15.498 [http-nio-8080-exec-5] INFO  - User (9 userId) made new recording (12 orderId).
+12:59:32.250 [http-nio-8080-exec-2] INFO  - User 9 left a rating 11 order.
+12:59:33.622 [http-nio-8080-exec-2] INFO  - Update data in table master. Id - 3
+12:59:33.744 [http-nio-8080-exec-2] INFO  - Delete data in table comment. Id - 8
+12:59:33.800 [http-nio-8080-exec-2] INFO  - Insert new data in table comment. Id - 9
+12:59:33.800 [http-nio-8080-exec-2] INFO  - User 9 left a comment 11 order.
+12:59:37.750 [http-nio-8080-exec-5] INFO  - User 9 logged out
+12:59:44.867 [http-nio-8080-exec-7] INFO  - User 2 logged in
+13:00:23.868 [http-nio-8080-exec-1] INFO  - Update data in table master. Id - 1
+13:00:23.873 [http-nio-8080-exec-1] INFO  - Update data in table user. Id - 2
+13:00:23.873 [http-nio-8080-exec-1] INFO  - User (2 userId) update own profile.
+13:00:50.317 [http-nio-8080-exec-10] INFO  - Update data in table master. Id - 1
+13:00:50.322 [http-nio-8080-exec-10] INFO  - Update data in table user. Id - 2
+13:00:50.323 [http-nio-8080-exec-10] INFO  - User (2 userId) update own profile.
+13:01:46.497 [http-nio-8080-exec-2] INFO  - Update data in table master. Id - 1
+13:01:46.504 [http-nio-8080-exec-2] INFO  - Update data in table user. Id - 2
+13:01:46.505 [http-nio-8080-exec-2] INFO  - User (2 userId) update own profile.
+13:01:59.231 [http-nio-8080-exec-9] INFO  - User 2 logged out
+13:02:03.434 [http-nio-8080-exec-1] INFO  - User 1 logged in
+13:02:07.896 [http-nio-8080-exec-4] INFO  - Admin (1 userId) received data
+13:02:34.503 [http-nio-8080-exec-6] INFO  - Update data in table orders. Id - 12
+13:02:34.504 [http-nio-8080-exec-6] INFO  - Admin 1 update 12 order.
+13:02:34.657 [http-nio-8080-exec-6] INFO  - Admin (1 userId) received data
+13:02:57.080 [http-nio-8080-exec-1] INFO  - Update data in table orders. Id - 12
+13:02:57.080 [http-nio-8080-exec-1] INFO  - Admin 1 update 12 order.
+13:02:57.259 [http-nio-8080-exec-1] INFO  - Admin (1 userId) received data
+13:03:22.575 [http-nio-8080-exec-4] INFO  - User 1 logged out
+14:31:46.259 [http-nio-8080-exec-4] INFO  - User 9 logged in
+14:33:13.987 [http-nio-8080-exec-7] INFO  - User 9 logged out
+14:33:22.962 [http-nio-8080-exec-2] INFO  - User 9 logged in
+14:58:15.578 [http-nio-8080-exec-4] INFO  - User 9 logged in
+14:58:54.837 [http-nio-8080-exec-9] INFO  - User 9 logged out
+14:58:58.950 [http-nio-8080-exec-1] INFO  - User 2 logged in
+14:59:01.523 [http-nio-8080-exec-6] INFO  - Master (2 userId) received data
+14:59:02.867 [http-nio-8080-exec-8] INFO  - User 2 logged out
+14:59:06.494 [http-nio-8080-exec-1] INFO  - User 1 logged in
+14:59:08.903 [http-nio-8080-exec-5] INFO  - Admin (1 userId) received data
+14:59:12.593 [http-nio-8080-exec-8] INFO  - User 1 logged out
+17:26:43.530 [http-nio-8080-exec-8] INFO  - User 9 logged in
+17:30:20.865 [http-nio-8080-exec-5] INFO  - User 9 logged out
+17:30:25.292 [http-nio-8080-exec-8] INFO  - User 2 logged in
+17:30:27.837 [http-nio-8080-exec-10] INFO  - Master (2 userId) received data
+17:30:34.714 [http-nio-8080-exec-6] INFO  - User 2 logged out
+17:34:43.636 [http-nio-8080-exec-2] INFO  - User 9 logged in
+17:34:53.597 [http-nio-8080-exec-8] INFO  - User 9 logged out
+17:34:57.704 [http-nio-8080-exec-10] INFO  - User 2 logged in
+17:34:59.436 [http-nio-8080-exec-2] INFO  - Master (2 userId) received data
+17:35:03.205 [http-nio-8080-exec-7] INFO  - Master (2 userId) received data
+17:35:06.296 [http-nio-8080-exec-1] INFO  - Master (2 userId) received data
+17:35:48.006 [http-nio-8080-exec-6] INFO  - Master (2 userId) received data
+17:35:51.523 [http-nio-8080-exec-8] INFO  - Master (2 userId) received data
+17:35:52.803 [http-nio-8080-exec-10] INFO  - Master (2 userId) received data
+17:35:54.687 [http-nio-8080-exec-2] INFO  - Master (2 userId) received data
+17:35:55.753 [http-nio-8080-exec-4] INFO  - Master (2 userId) received data
+17:36:10.326 [http-nio-8080-exec-7] INFO  - Master (2 userId) received data
+17:36:17.156 [http-nio-8080-exec-10] INFO  - User 2 logged out
+17:36:20.721 [http-nio-8080-exec-2] INFO  - User 9 logged in
+17:37:57.501 [http-nio-8080-exec-2] INFO  - User 9 logged out
+17:38:01.900 [http-nio-8080-exec-4] INFO  - User 1 logged in
+17:38:03.962 [http-nio-8080-exec-6] INFO  - Admin (1 userId) received data
+17:38:15.836 [http-nio-8080-exec-8] INFO  - User 1 logged out
+17:40:10.625 [http-nio-8080-exec-3] INFO  - User 1 logged in
+17:40:13.815 [http-nio-8080-exec-5] INFO  - Admin (1 userId) received data
+17:40:19.629 [http-nio-8080-exec-7] INFO  - Admin (1 userId) received data
+17:40:21.281 [http-nio-8080-exec-9] INFO  - Admin (1 userId) received data
+17:40:23.089 [http-nio-8080-exec-1] INFO  - Admin (1 userId) received data
+17:40:26.581 [http-nio-8080-exec-3] INFO  - Admin (1 userId) received data
+17:40:28.401 [http-nio-8080-exec-5] INFO  - Admin (1 userId) received data
+17:40:30.619 [http-nio-8080-exec-7] INFO  - Admin (1 userId) received data
+17:41:20.549 [http-nio-8080-exec-3] INFO  - User 9 logged in
+17:41:35.817 [http-nio-8080-exec-6] INFO  - User 9 logged out
+17:41:48.962 [http-nio-8080-exec-8] INFO  - User 1 logged in
+17:41:57.255 [http-nio-8080-exec-10] INFO  - Admin (1 userId) received data
+17:42:00.082 [http-nio-8080-exec-2] INFO  - Admin (1 userId) received data
+17:42:03.993 [http-nio-8080-exec-4] INFO  - Admin (1 userId) received data
+17:42:18.193 [http-nio-8080-exec-6] INFO  - Admin (1 userId) received data
+17:42:20.765 [http-nio-8080-exec-8] INFO  - Admin (1 userId) received data
+20:33:14.357 [http-nio-8080-exec-10] INFO  - User 9 logged in
+20:33:23.969 [http-nio-8080-exec-3] INFO  - Update data in table user. Id - 9
+20:33:23.970 [http-nio-8080-exec-3] INFO  - User (9 userId) update own profile.
+20:35:19.826 [http-nio-8080-exec-6] INFO  - Insert new data in table orders. Id - 13
+20:35:19.827 [http-nio-8080-exec-6] INFO  - User (9 userId) made new recording (13 orderId).
+20:35:51.744 [http-nio-8080-exec-10] INFO  - User 9 logged out
+20:35:57.639 [http-nio-8080-exec-9] INFO  - User 2 logged in
+20:36:09.670 [http-nio-8080-exec-6] INFO  - Update data in table master. Id - 1
+20:36:09.677 [http-nio-8080-exec-6] INFO  - Update data in table user. Id - 2
+20:36:09.677 [http-nio-8080-exec-6] INFO  - User (2 userId) update own profile.
+20:36:45.170 [http-nio-8080-exec-7] INFO  - Master (2 userId) received data
+20:36:50.420 [http-nio-8080-exec-9] INFO  - Master (2 userId) received data
+20:36:52.010 [http-nio-8080-exec-3] INFO  - Master (2 userId) received data
+20:37:04.548 [http-nio-8080-exec-7] INFO  - User 2 logged out
+20:37:08.666 [http-nio-8080-exec-9] INFO  - User 1 logged in
+20:37:12.657 [http-nio-8080-exec-4] INFO  - Admin (1 userId) received data
+20:38:04.218 [http-nio-8080-exec-9] INFO  - User 1 logged out

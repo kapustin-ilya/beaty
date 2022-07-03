@@ -1,0 +1,13 @@
+
+U
+java:S1118":Add a private constructor to hide the implicit public one.(ÂÑŒûÿÿÿÿ
+R
+java:S2209"5Change this instance-reference to a static reference.(ãßÖ×8ëœ¥ œ0
+W
+java:S2209"5Change this instance-reference to a static reference.(³±¶¢ùÿÿÿÿ8ëœ¥ œ0
+R
+java:S2209"5Change this instance-reference to a static reference.(¯ù‰8ëœ¥ œ0
+˜
+java:S1130"vRemove the declaration of thrown exception 'web.exception.EntityException', as it cannot be thrown from method's body.(§ÖÍ øÿÿÿÿ8ëœ¥ œ0
+W
+java:S2209"5Change this instance-reference to a static reference.(©«²§ÿÿÿÿÿ8ëœ¥ œ0

@@ -1,0 +1,7 @@
+
+A
+java:S2629"$Invoke method(s) only conditionally.(¾—ñ8É€ÛŸ›0
+a
+java:S1858"F"getParameter" returns a string, there's no need to call "toString()".(ş‰é´øÿÿÿÿ
+D
+java:S1125"(Remove the unnecessary boolean literals.(Û—…	8á€ÛŸ›0

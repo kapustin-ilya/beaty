@@ -1,0 +1,33 @@
+
+f	java:S1173"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö—ÄÂ
+r	java:S117;"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®äèóşÿÿÿÿ8à™ƒúš0
+P
+java:S1118":Add a private constructor to hide the implicit public one.(¢Ú–˜
+Q
+java:S2209"5Change this instance-reference to a static reference.(³¤è8õ¬¥ œ0
+Q
+java:S2209"5Change this instance-reference to a static reference.(”ƒ­)8…­¥ œ0
+R
+java:S2209#"5Change this instance-reference to a static reference.(ç…Ú8…­¥ œ0
+W
+java:S2209&"5Change this instance-reference to a static reference.(¤ëë“üÿÿÿÿ8…­¥ œ0
+R
+java:S2209*"5Change this instance-reference to a static reference.(üß¯§8…­¥ œ0
+W
+java:S2209-"5Change this instance-reference to a static reference.(«î›ıÿÿÿÿ8•­¥ œ0
+W
+java:S22090"5Change this instance-reference to a static reference.(ÔÏïüÿÿÿÿ8•­¥ œ0
+Y
+java:S11551">Use isEmpty() to check whether the collection is empty or not.(¸şÿøÿÿÿÿ
+“
+java:S11303"vRemove the declaration of thrown exception 'web.exception.EntityException', as it cannot be thrown from method's body.(Ö—ÄÂ8âÚàöš0
+R
+java:S22094"5Change this instance-reference to a static reference.(çóç 8´­¥ œ0
+R
+java:S22099"5Change this instance-reference to a static reference.(öùÀÍ8´­¥ œ0
+W
+java:S2209<"5Change this instance-reference to a static reference.(À¢šÿÿÿÿÿ8´­¥ œ0
+R
+java:S1128"0Remove this unused import 'web.entities.Client'.(ŸÌ‡¤ùÿÿÿÿ8óÄƒúš0
+`
+java:S1128	">Remove this unused import 'web.repository.impl.ClientDAOImpl'.(üÒ×¾ùÿÿÿÿ8ôÄƒúš0

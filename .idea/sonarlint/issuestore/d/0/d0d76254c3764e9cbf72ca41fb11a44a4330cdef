@@ -1,0 +1,19 @@
+
+^
+java:S11920"HDefine a constant instead of duplicating this literal "rating" 15 times.(¨Ğ¡‘
+f
+java:S1192."KDefine a constant instead of duplicating this literal "idCategory" 7 times.(–Å‡„ùÿÿÿÿ
+d
+java:S11923"IDefine a constant instead of duplicating this literal "lowLevel" 4 times.(ê€Íïúÿÿÿÿ
+]
+java:S1192/"HDefine a constant instead of duplicating this literal "search" 10 times.(²æ0
+l
+java:S1192&"QDefine a constant instead of duplicating this literal "generalCategory" 10 times.(Œñìøÿÿÿÿ
+m
+java:S1192%"RDefine a constant instead of duplicating this literal "idGeneralCategory" 6 times.(Û¢’”úÿÿÿÿ
+^
+java:S1192I"IDefine a constant instead of duplicating this literal "category" 6 times.(‚¸k
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 51 to the 15 allowed.(âÕìµÿÿÿÿÿ
+R
+java:S1128"5Remove this unused import 'java.text.ParseException'.(ñ®ï•8è²ƒÊ›0
