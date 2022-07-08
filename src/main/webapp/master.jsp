@@ -9,7 +9,8 @@
         <table class="table-user" style = "text-align: center; padding-left: 50px; padding-right: 50px;">
             <tr style = "text-transform: uppercase; width: 200px">
                <th class="table-user-th-td ">Date visit</th>
-               <th class="table-user-th-td ">Time visit</th>
+               <th class="table-user-th-td ">Time start visit</th>
+               <th class="table-user-th-td ">Time finish visit</th>
                <th class="table-user-th-td ">Category</th>
                <th class="table-user-th-td ">Completed</th>
                <th class="table-user-th-td ">Comment</th>
@@ -18,11 +19,8 @@
             <c:forEach var = "orderDTO" items = "${orderDTOList}">
                 <tr style = "border: 1px solid black; padding-top: 10px; padding-bottom: 10px;">
                     <td class="table-user-th-td "><input type="date" name="dateOrder" value="${orderDTO.getDateOrder()}" disabled></td>
-                    <td class="table-user-th-td ">
-                         <select name = "hourOrder" disabled>
-                             <option><c:out value = "${orderDTO.getHourOrder()}"/></option>
-                         </select>
-                    </td>
+                    <td class="table-user-th-td "> <c:out value = "${orderDTO.getHourOrder()}"/> </td>
+                    <td class="table-user-th-td "> <c:out value = "${orderDTO.getHourFinishOrder()}"/></td>
                     <td class="table-user-th-td ">
                        <ul style = "list-style-type: none;">
                           <c:forEach var = "category" items = "${orderDTO.getCategories()}">

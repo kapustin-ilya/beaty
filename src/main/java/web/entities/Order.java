@@ -6,14 +6,18 @@ import web.annotation.ManyToOne;
 import web.annotation.TableDB;
 import lombok.Data;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.Set;
 
 @TableDB(name = "orders")
 @Data
 public class Order extends Entity{
+    @Column(name = "date_order")
+    private LocalDate dateOrder;
     @Column(name = "time_order")
-    private LocalDateTime timeOrder;
+    private LocalTime timeOrder;
     @Column(name = "completed")
     private Boolean completed;
     @Column(name = "paid")

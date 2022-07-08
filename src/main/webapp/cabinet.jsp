@@ -4,25 +4,23 @@
 <div id="user-cabinet" style = "background-color: #ffffff; border: 2px solid; position: absolute; top: 75px; left: 200px; z-index: 100;
         <c:if test="${empty userCabinet}">
            display: none;
-        </c:if>" >
+        </c:if> " >
     <table class="table-user">
             <tr style = "text-transform: uppercase; width: 200px">
-                <td class="table-user-th-td">Date visit</td>
-                <td class="table-user-th-td">Time visit</td>
-                <td class="table-user-th-td">Master Name</td>
-                <td class="table-user-th-td">Category</td>
-                <td class="table-user-th-td">Sum visit</td>
-                <td class="table-user-th-td">Rating</td>
-                <td class="table-user-th-td">Comment</td>
+                <th class="table-user-th-td">Date visit</th>
+                <th class="table-user-th-td ">Time start visit</th>
+                <th class="table-user-th-td ">Time finish visit</th>
+                <th class="table-user-th-td">Master Name</th>
+                <th class="table-user-th-td">Category</th>
+                <th class="table-user-th-td">Sum visit</th>
+                <th class="table-user-th-td">Rating</th>
+                <th class="table-user-th-td">Comment</th>
             </tr>
             <c:forEach var = "orderDTO" items = "${orderDTOList}">
                 <tr>
                     <td class="table-user-th-td"><input type="date" name="dateOrder" value="${orderDTO.getDateOrder()}" disabled></td>
-                    <td class="table-user-th-td">
-                    <select name = "hourOrder" disabled>
-                            <option><c:out value = "${orderDTO.getHourOrder()}"/></option>
-                    </select>
-                    </td class="table-user-th-td">
+                    <td class="table-user-th-td "> <c:out value = "${orderDTO.getHourOrder()}"/> </td>
+                    <td class="table-user-th-td "> <c:out value = "${orderDTO.getHourFinishOrder()}"/></td>
                     <td class="table-user-th-td">${orderDTO.getMasterName()}</td>
                     <td class="table-user-th-td">
                         <ul>

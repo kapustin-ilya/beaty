@@ -7,6 +7,7 @@ import web.annotation.TableDB;
 import lombok.Data;
 
 import java.sql.Time;
+import java.time.LocalTime;
 import java.util.Set;
 
 @Data
@@ -15,7 +16,7 @@ public class Category extends Entity{
     @Column(name = "name")
     private String name;
     @Column(name = "work_time")
-    private Time workTime;
+    private LocalTime workTime;
     @Column(name = "price_low")
     private Double priceLow;
     @Column(name = "price_hight")

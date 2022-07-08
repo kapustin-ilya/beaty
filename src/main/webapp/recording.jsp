@@ -13,7 +13,7 @@
         <h2>Recording</h2>
         <form action="/beauty/b?command=newRecording" method = "post">
             <label for="master"><b>Master</b></label>
-            <select class ="profile-select master_select" name = "master">
+            <select id= "master-id" class ="profile-select master_select" name = "master">
                 <option class = "master_option" value = "-1"> All master </option>
                 <c:forEach var = "master" items = "${masterList}" >
                     <option class = "master_option <c:forEach var = "category" items = "${master.getCategories()}"> <c:out value = "${category.getId()}IdCategory"/> </c:forEach> " value = "${master.getId()}"> <c:out value = "${master.getUser().getName()}"/> </option>
@@ -30,7 +30,7 @@
 
             <br/><br/>
             <label><b>Category</b></label>
-            <select class = "profile-select category_select firstOrderSelect" name = "categoryFirst">
+            <select id="first-category" class = "profile-select category_select firstOrderSelect" name = "categoryFirst">
                  <option class = "category_option -1IdGCategory_cat_sel" value = "-1"> All Category </option>
                  <c:forEach var = "category" items = "${categoryList}" >
                         <option class = "category_option ${category.getGeneralCategoryId()}IdGCategory_cat_sel" value = "${category.getId()}"> <c:out value = "${category.getName()}"/> </option>
@@ -38,7 +38,7 @@
             </select>
             <button class = "enter-buttom-form-login addSecondOrderButton" form = "">Add category</button>
 
-            <select class = "profile-select category_select secondOrderSelect" name = "categorySecond" style="display:none">
+            <select id="second-category" class = "profile-select category_select secondOrderSelect" name = "categorySecond" style="display:none">
                   <option class = "category_option -1IdGCategory_cat_sel" value = "-1"> All Category </option>
                   <c:forEach var = "category" items = "${categoryList}" >
                         <option class = "category_option ${category.getGeneralCategoryId()}IdGCategory_cat_sel" value = "${category.getId()}"> <c:out value = "${category.getName()}"/> </option>
@@ -47,7 +47,7 @@
             <button class = "enter-buttom-form-login addThirdOrderButton" form = "" style="display:none">Add category</button>
             <button class = "enter-buttom-form-login removeSecondOrderButton" form = "" style="display:none">Remove category</button>
 
-            <select class = "profile-select category_select thirdOrderSelect" name = "categoryThird" style="display:none">
+            <select id="third-category" class = "profile-select category_select thirdOrderSelect" name = "categoryThird" style="display:none">
                     <option class = "category_option -1IdGCategory_cat_sel" value = "-1"> All Category </option>
                     <c:forEach var = "category" items = "${categoryList}" >
                            <option class = "category_option ${category.getGeneralCategoryId()}IdGCategory_cat_sel" value = "${category.getId()}"> <c:out value = "${category.getName()}"/> </option>
@@ -56,14 +56,11 @@
             <button class = "enter-buttom-form-login removeThirdOrderButton" form = "" style="display:none">Remove category</button>
             <br/><br/>
             <label for="dateOrder"><b>Date</b></label>
-            <input type="date" name = "dateOrder" min="${localDate}"/>
-            <select name = "timeOrder">
+            <input id="date-order" type="date" name = "dateOrder" min="${localDate}"/>
+            <select id="time-order" name = "timeOrder">
                   <option value="<c:out value = "--:--"/>"><c:out value = "--:--"/></option>
-                  <c:forEach var = "i" begin = "10" end = "20">
-                        <option value="<c:out value = "${i}:00"/>"><c:out value = "${i}:00"/></option>
-                        <option value="<c:out value = "${i}:30"/>"><c:out value = "${i}:30"/></option>
-                  </c:forEach>
             </select>
+            <button id="getTimeOrder" type="button">UP</button>
             <br/><br/>
             <button class="enter-buttom-form-login" type="submit">Order</button>
         </form>
@@ -71,6 +68,30 @@
 </div>
 
 <script>
+        $(document).ready(function() {
+            $('#getTimeOrder').on('click',function() {
+                var master_id = document.getElementById("master-id").value;
+                var date_order = document.getElementById("date-order").value;
+
+                var first_category = document.getElementById("first-category").value;
+                var second_category = document.getElementById("second-category").value;
+                var third_category = document.getElementById("third-category").value;
+
+                if (master_id == -1 || date_order == ""){
+                    document.getElementById("master-id").style.borderColor = "red";
+                    document.getElementById("date-order").style.borderColor = "red";
+                } else {
+                    document.getElementById("master-id").style.borderColor = "#ccc";
+                    document.getElementById("date-order").style.borderColor = "#ccc";
+                   $.get('UpdateTimeMaster', {"master_id": master_id,"date_order": date_order,
+                                               "first_category": first_category, "second_category": second_category, "third_category": third_category  },
+                            function(responseText) {
+                                $("#time-order").html(responseText);
+                            });
+                }
+            });
+         });
+
             document.getElementsByClassName("addSecondOrderButton")[0].addEventListener('click',function() {
                 document.getElementsByClassName("addSecondOrderButton")[0].style.display="none";
                 document.getElementsByClassName("secondOrderSelect")[0].style.display="";

@@ -1,32 +1,0 @@
-
-@
-java:S5411""*Use the primitive boolean expression here.(®œã¼
-t
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(ë›èÌûÿÿÿÿ8Œ”ÿ ›0
-U
-java:S1161":Add the "@Override" annotation above this method signature(ë›èÌûÿÿÿÿ
->	java:S131""Add a default case to this switch.(İ¾÷È8Ü„£›0
-=
-java:S1125"(Remove the unnecessary boolean literals.(áÜl
->
-java:S1125"(Remove the unnecessary boolean literals.(æ÷ô©
-C
-java:S1125"(Remove the unnecessary boolean literals.(®÷óÿÿÿÿÿ
-E
-java:S1125"(Remove the unnecessary boolean literals.(«ûéÅ8„Ñı ›0
-J
-java:S1125"(Remove the unnecessary boolean literals.(½°¦Ÿøÿÿÿÿ8‘”ÿ ›0
-J
-java:S1125"(Remove the unnecessary boolean literals.(•Ü±Üûÿÿÿÿ8ÖËÿ ›0
-J
-java:S1125"(Remove the unnecessary boolean literals.(™«…‰ùÿÿÿÿ8ˆ»€¡›0
-E
-java:S1125"(Remove the unnecessary boolean literals.(ÄÙÃ€8Ü€¡›0
-J
-java:S1125"(Remove the unnecessary boolean literals.(ãŠŠşÿÿÿÿ8ó»¡›0
-E
-java:S1125"(Remove the unnecessary boolean literals.(®çÔ˜8ô»¡›0
-E
-java:S1125"(Remove the unnecessary boolean literals.(›‡²8¨™‚¡›0
-E
-java:S1125"(Remove the unnecessary boolean literals.(˜ÿ“š8ŸÖ…¡›0

@@ -75,12 +75,13 @@ public abstract class AbstractDAOImpl<E extends Entity> implements AbstractDAO<E
     @Override
     public E findElementById(Connection con, Integer id, boolean versionOfSearch) throws DBException,EntityException {
         cn = con;
+        E element = null;
         try {
             ps = cn.prepareStatement(SQL_FIND_ELEMENT_BY_ID);
             ps.setObject(1, id);
             rs = ps.executeQuery();
             if (!rs.isClosed() &&  rs.next()) {
-                return readNextElement(rs,versionOfSearch);
+                element = readNextElement(rs,versionOfSearch);
             }
             rs.close();
             ps.close();
@@ -92,7 +93,7 @@ public abstract class AbstractDAOImpl<E extends Entity> implements AbstractDAO<E
             close(ps);
             close(cn);
         }
-        return null;
+        return element;
     }
 
     @Override
@@ -136,7 +137,7 @@ public abstract class AbstractDAOImpl<E extends Entity> implements AbstractDAO<E
             int result = ps.executeUpdate();
             if (result != 0) {
                 rs = ps.getGeneratedKeys();
-                if (rs.isClosed() && rs.next()) {
+                if (rs.next()) {
                     entity.setId(rs.getInt(1));
                 }
                 insOrUpDataInTableMToM(entity,true);
@@ -182,6 +183,7 @@ public abstract class AbstractDAOImpl<E extends Entity> implements AbstractDAO<E
             if (result != 0){
                 insOrUpDataInTableMToM(entity,false);
             }
+            cn.commit();
             ps.close();
             cn.close();
         } catch ( SQLException e) {
@@ -321,9 +323,6 @@ public abstract class AbstractDAOImpl<E extends Entity> implements AbstractDAO<E
 
                     Set<Integer> idForeignElements = FindAllForManyToMany(elementId,tableForManyToMany,mainColumnDB,foreignColumnDB);
                     Set<Object> setForeignElements = new HashSet<>();
-                    /*setForeignElements = idForeignElements.stream()
-                                    .map(index->foreignEntityDAOImpl.findElementById(DBManager.getInstance().getConnection(), index,false))
-                                    .collect(Collectors.toSet());*/
                     for(Integer idForeignElement : idForeignElements){
                         setForeignElements.add(foreignEntityDAOImpl.findElementById(DBManager.getInstance().getConnection(), idForeignElement,false));
                     }
@@ -347,18 +346,26 @@ public abstract class AbstractDAOImpl<E extends Entity> implements AbstractDAO<E
     private Set<E> FindAllForOneToMany(Integer elementId, String foreignColumnDB, boolean versionOfSearch) throws DBException, EntityException{
         Set<E> setForeignElements = new HashSet<>();
         final String FIND_ALL_BY_FOREIGN_ID = String.format("select * from %s where %s = ?;",nameDB,foreignColumnDB);
+        Connection innerCn = null;
+        PreparedStatement innerPs = null;
+        ResultSet resSet = null;
         try {
-            Connection innerCn = DBManager.getInstance().getConnection();
-            PreparedStatement innerPs = innerCn.prepareStatement(FIND_ALL_BY_FOREIGN_ID);
+            innerCn = DBManager.getInstance().getConnection();
+            innerPs = innerCn.prepareStatement(FIND_ALL_BY_FOREIGN_ID);
             innerPs.setInt(1,elementId);
-            ResultSet resSet = innerPs.executeQuery();
+            resSet = innerPs.executeQuery();
             while (!resSet.isClosed() && resSet.next()) {
                 setForeignElements.add(readNextElement(resSet,versionOfSearch));
             }
             resSet.close();
             innerPs.close();
-         } catch (SQLException e) {
+            innerCn.close();
+        } catch (SQLException e) {
             throw new DBException(String.format("Exception while getting data from table %s method FindAllForOneToMany",nameDB),e);
+        } finally {
+            close(resSet);
+            close(innerPs);
+            close(innerCn);
         }
 
         return setForeignElements;
@@ -367,19 +374,27 @@ public abstract class AbstractDAOImpl<E extends Entity> implements AbstractDAO<E
     private Set<Integer> FindAllForManyToMany(Integer elementId, String tableForManyToMany, String mainColumnDB, String foreignColumnDB) throws DBException{
         Set<Integer> idForeignElements = new HashSet<>();
         final String FIND_ALL_IN_MToM_BY_FOREIGN_ID = String.format("select %s from %s where %s = ?;",foreignColumnDB,tableForManyToMany,mainColumnDB);
+        Connection innerCn = null;
+        PreparedStatement innerPs = null;
+        ResultSet resSet = null;
         try {
-            Connection innerCn = DBManager.getInstance().getConnection();
-            PreparedStatement innerPs = innerCn.prepareStatement(FIND_ALL_IN_MToM_BY_FOREIGN_ID);
+            innerCn = DBManager.getInstance().getConnection();
+            innerPs = innerCn.prepareStatement(FIND_ALL_IN_MToM_BY_FOREIGN_ID);
             innerPs.setInt(1,elementId);
-            ResultSet resSet = innerPs.executeQuery();
+            resSet = innerPs.executeQuery();
             while (!resSet.isClosed() && resSet.next()){
                 idForeignElements.add(resSet.getInt(foreignColumnDB));
             }
             resSet.close();
             innerPs.close();
+            innerCn.close();
        } catch (SQLException e) {
             throw new DBException(String.format("Exception while getting data from table %s method FindAllForManyToMany",nameDB),e);
-       }
+       } finally {
+            close(resSet);
+            close(innerPs);
+            close(innerCn);
+        }
         return idForeignElements;
     }
 

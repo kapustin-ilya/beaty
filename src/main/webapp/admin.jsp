@@ -6,30 +6,31 @@
 <html>
 <head>
     <style>
-    body {
-        background-image: url("static/images/back-image.jpg");
-    }
-    <style>
-    table {
-        border-collapse: collapse;
-        border-spacing: 0;
-        width: 100%;
-        border: 1px solid #ddd;
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-    th, td {
-        text-align: left;
-        padding: 6px;
-    }
-
-    tr:nth-child(even) {
-        background-color: #f2f2f2
-    }
+        body {
+            background-image: url("static/images/back-image.jpg");
+        }
     </style>
+    <style>
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 6px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
     </style>
     <link href="static/css/header.css" type="text/css" rel="stylesheet" />
+    <script src="static/jquery-3.6.0.js"></script>
 </head>
 <body>
         <jsp:include page="header.jsp" />
@@ -40,7 +41,8 @@
         <table class="table-user" style = " background-color: #ffffff; padding-left: 50px; padding-right: 50px;">
              <tr style = "text-transform: uppercase; width: 200px">
                  <td class="table-user-th-td">Date visit</td>
-                 <td class="table-user-th-td">Time visit</td>
+                 <th class="table-user-th-td ">Time start visit</th>
+                 <th class="table-user-th-td ">Duration of visit</th>
                  <td class="table-user-th-td">Master Name</td>
                  <td class="table-user-th-td">Client Name</td>
                  <td class="table-user-th-td">Category</td>
@@ -63,7 +65,7 @@
                                 </c:forEach>
                           </select>
                         </td>
-
+                        <td class="table-user-th-td">${orderDTO.getDurationOrder()}</td>
                       <td class="table-user-th-td">${orderDTO.getMasterName()}</td>
                       <td class="table-user-th-td">${orderDTO.getClientName()}</td>
 

@@ -52,7 +52,7 @@ public class ValidationDataFilter extends HttpFilter {
         String idCategoryThird = req.getParameter("categoryThird");
         String time = req.getParameter("timeOrder");
         String date = req.getParameter("dateOrder");
-        return (!idMaster.equals("-1")&&(idCategoryFirst.equals("-1")||idCategorySecond.equals("-1")||idCategoryThird.equals("-1"))
+        return (!idMaster.equals("-1")&&(!idCategoryFirst.equals("-1")||!idCategorySecond.equals("-1")||!idCategoryThird.equals("-1"))
                     && time != null && !date.equals("--:--")) ? true : false;
     }
 

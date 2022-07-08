@@ -7,6 +7,7 @@ import web.repository.DBManager;
 import web.repository.impl.*;
 
 import java.util.List;
+import java.util.Optional;
 
 public class ClientService {
 
@@ -18,7 +19,9 @@ public class ClientService {
         return new ClientDAOImpl().insert(DBManager.getInstance().getConnection(),client);}
 
     public static Client getClientByUserId(Integer idUser) throws DBException, EntityException{
-        return (new ClientDAOImpl().findAll(DBManager.getInstance().getConnection(),false)).stream().filter(c->c.getUserID().equals(idUser)).findFirst().get();
+        Optional<Client> client = new ClientDAOImpl().findAll(DBManager.getInstance().getConnection(),false).stream()
+                .filter(c->c.getUserID().equals(idUser)).findFirst();
+        return client.isPresent() ? client.get() : null;
     }
     public static Client getClientById(Integer id) throws DBException, EntityException{
         return new ClientDAOImpl().findElementById(DBManager.getInstance().getConnection(),id,false);

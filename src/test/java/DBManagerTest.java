@@ -7,13 +7,13 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBManagerTest {
-    private static DBManagerTest dbManagerTest;
+    private static DBManagerTest dbManagerTest = null;
     private static BasicDataSource dataSource = new BasicDataSource();
 
-    private DBManagerTest() {
+    public DBManagerTest() {
     }
 
-    public static synchronized DBManagerTest getInstance() {
+    public static DBManagerTest getInstance() {
         if (dbManagerTest == null) {
             dbManagerTest = new DBManagerTest();
         }
@@ -22,15 +22,12 @@ public class DBManagerTest {
 
     public Connection getConnection() {
         /*HikariConfig configHikari = new HikariConfig();
+        configHikari.setDriverClassName("com.mysql.cj.jdbc.Driver");
         configHikari.setJdbcUrl( "jdbc:mysql://localhost:3306/beauty_salon_test" );
         configHikari.setUsername( "root" );
         configHikari.setPassword( "root" );
-        configHikari.addDataSourceProperty( "cachePrepStmts" , "true" );
-        configHikari.addDataSourceProperty( "prepStmtCacheSize" , "250" );
-        configHikari.addDataSourceProperty( "prepStmtCacheSqlLimit" , "2048" );
+        configHikari.setMaximumPoolSize( 1000 );
         configHikari.setAutoCommit(true);
-        configHikari.setMaximumPoolSize(100);
-        configHikari.setDriverClassName("com.mysql.cj.jdbc.Driver");
         HikariDataSource dsHikari = new HikariDataSource(configHikari);*/
 
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");

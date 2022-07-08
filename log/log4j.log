@@ -1812,3 +1812,1773 @@ Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL synta
 20:37:08.666 [http-nio-8080-exec-9] INFO  - User 1 logged in
 20:37:12.657 [http-nio-8080-exec-4] INFO  - Admin (1 userId) received data
 20:38:04.218 [http-nio-8080-exec-9] INFO  - User 1 logged out
+11:12:19.939 [main] INFO  - Insert new data in table comment. Id - null
+11:16:57.417 [main] INFO  - Insert new data in table comment. Id - null
+11:18:56.399 [main] INFO  - Insert new data in table comment. Id - null
+11:21:17.398 [main] INFO  - Insert new data in table comment. Id - null
+11:23:33.830 [main] INFO  - Insert new data in table comment. Id - 7
+11:32:02.839 [main] INFO  - Insert new data in table comment. Id - 3
+11:36:42.571 [main] INFO  - Insert new data in table comment. Id - 4
+12:01:39.712 [main] INFO  - Insert new data in table comment. Id - 3
+12:01:40.119 [main] INFO  - Delete data in table comment. Id - 3
+12:15:55.601 [main] INFO  - Insert new data in table comment. Id - 4
+12:15:55.827 [main] INFO  - Delete data in table comment. Id - 4
+12:16:22.117 [main] INFO  - Insert new data in table comment. Id - 5
+12:16:22.298 [main] INFO  - Delete data in table comment. Id - 5
+12:17:31.501 [main] INFO  - Insert new data in table comment. Id - 6
+12:17:32.062 [main] INFO  - Delete data in table comment. Id - 6
+12:45:03.798 [main] INFO  - Update data in table master. Id - 1
+12:45:33.535 [main] INFO  - Update data in table master. Id - 1
+12:48:00.213 [main] INFO  - Update data in table master. Id - 1
+12:55:23.149 [main] INFO  - Update data in table master. Id - 1
+12:58:40.861 [main] INFO  - Update data in table master. Id - 1
+12:59:19.438 [main] INFO  - Update data in table master. Id - 1
+13:01:56.029 [main] INFO  - Update data in table master. Id - 1
+13:06:32.104 [http-nio-8080-exec-6] INFO  - User 2 logged in
+13:06:43.805 [http-nio-8080-exec-3] INFO  - Update data in table master. Id - 1
+13:06:43.858 [http-nio-8080-exec-3] INFO  - Update data in table user. Id - 2
+13:06:43.859 [http-nio-8080-exec-3] INFO  - User (2 userId) update own profile.
+13:06:46.583 [http-nio-8080-exec-3] ERROR - Can not obtain a connection
+web.exception.DBException: Can not obtain a connection
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:33) [classes/:?]
+	at web.controller.commads.ProfileUpdateController.execute(ProfileUpdateController.java:97) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:26) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:52) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:374) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:565) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:307) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:428) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:232) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:141) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.DBManager.getConnection(DBManager.java:52) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:296) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findAll(AbstractDAOImpl.java:107) ~[classes/:?]
+	at web.service.CategoryService.getAllCategories(CategoryService.java:20) ~[classes/:?]
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:28) ~[classes/:?]
+	... 34 more
+13:07:04.368 [http-nio-8080-exec-8] ERROR - Can not obtain a connection
+web.exception.DBException: Can not obtain a connection
+	at web.controller.commads.CategoryController.execute(CategoryController.java:157) [classes/:?]
+	at web.servlet.MainServlet.doGet(MainServlet.java:18) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:52) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:374) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:565) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:307) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:428) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:232) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:141) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.DBManager.getConnection(DBManager.java:52) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.FindAllForOneToMany(AbstractDAOImpl.java:352) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:308) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findAll(AbstractDAOImpl.java:107) ~[classes/:?]
+	at web.service.CategoryService.getAllGeneralCategories(CategoryService.java:16) ~[classes/:?]
+	at web.controller.commads.CategoryController.execute(CategoryController.java:31) ~[classes/:?]
+	... 33 more
+13:07:06.794 [http-nio-8080-exec-1] ERROR - Can not obtain a connection
+web.exception.DBException: Can not obtain a connection
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:33) [classes/:?]
+	at web.servlet.MainServlet.doGet(MainServlet.java:18) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:52) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:374) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:565) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:307) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:428) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:232) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:141) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.DBManager.getConnection(DBManager.java:52) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:296) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findAll(AbstractDAOImpl.java:107) ~[classes/:?]
+	at web.service.CategoryService.getAllCategories(CategoryService.java:20) ~[classes/:?]
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:28) ~[classes/:?]
+	... 33 more
+13:07:07.488 [http-nio-8080-exec-3] ERROR - Can not obtain a connection
+web.exception.DBException: Can not obtain a connection
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:33) [classes/:?]
+	at web.servlet.MainServlet.doGet(MainServlet.java:18) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:52) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:374) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:565) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:307) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:428) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:232) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:141) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.DBManager.getConnection(DBManager.java:52) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:296) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findAll(AbstractDAOImpl.java:107) ~[classes/:?]
+	at web.service.CategoryService.getAllCategories(CategoryService.java:20) ~[classes/:?]
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:28) ~[classes/:?]
+	... 33 more
+13:07:08.087 [http-nio-8080-exec-4] ERROR - Can not obtain a connection
+web.exception.DBException: Can not obtain a connection
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:33) [classes/:?]
+	at web.servlet.MainServlet.doGet(MainServlet.java:18) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:52) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:374) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:565) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:307) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:428) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:232) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:141) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.DBManager.getConnection(DBManager.java:52) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:296) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findAll(AbstractDAOImpl.java:107) ~[classes/:?]
+	at web.service.CategoryService.getAllCategories(CategoryService.java:20) ~[classes/:?]
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:28) ~[classes/:?]
+	... 33 more
+13:07:08.662 [http-nio-8080-exec-7] ERROR - Can not obtain a connection
+web.exception.DBException: Can not obtain a connection
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:33) [classes/:?]
+	at web.servlet.MainServlet.doGet(MainServlet.java:18) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:52) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:374) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:565) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:307) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:428) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:232) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:141) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.DBManager.getConnection(DBManager.java:52) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:296) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findAll(AbstractDAOImpl.java:107) ~[classes/:?]
+	at web.service.CategoryService.getAllCategories(CategoryService.java:20) ~[classes/:?]
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:28) ~[classes/:?]
+	... 33 more
+13:07:09.407 [http-nio-8080-exec-9] ERROR - Can not obtain a connection
+web.exception.DBException: Can not obtain a connection
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:33) [classes/:?]
+	at web.servlet.MainServlet.doGet(MainServlet.java:18) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:52) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:374) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:565) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:307) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:428) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:232) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:141) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.DBManager.getConnection(DBManager.java:52) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:296) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findAll(AbstractDAOImpl.java:107) ~[classes/:?]
+	at web.service.CategoryService.getAllCategories(CategoryService.java:20) ~[classes/:?]
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:28) ~[classes/:?]
+	... 33 more
+13:07:11.736 [http-nio-8080-exec-2] ERROR - Can not obtain a connection
+web.exception.DBException: Can not obtain a connection
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:33) [classes/:?]
+	at web.servlet.MainServlet.doGet(MainServlet.java:18) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:52) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:374) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:565) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:307) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:428) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:232) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:141) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.DBManager.getConnection(DBManager.java:52) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:296) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findAll(AbstractDAOImpl.java:107) ~[classes/:?]
+	at web.service.CategoryService.getAllCategories(CategoryService.java:20) ~[classes/:?]
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:28) ~[classes/:?]
+	... 33 more
+13:07:12.855 [http-nio-8080-exec-5] ERROR - Can not obtain a connection
+web.exception.DBException: Can not obtain a connection
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:33) [classes/:?]
+	at web.servlet.MainServlet.doGet(MainServlet.java:18) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:52) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:374) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:565) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:307) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:428) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:232) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:141) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.DBManager.getConnection(DBManager.java:52) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:296) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findAll(AbstractDAOImpl.java:107) ~[classes/:?]
+	at web.service.CategoryService.getAllCategories(CategoryService.java:20) ~[classes/:?]
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:28) ~[classes/:?]
+	... 33 more
+13:07:13.552 [http-nio-8080-exec-6] ERROR - Can not obtain a connection
+web.exception.DBException: Can not obtain a connection
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:33) [classes/:?]
+	at web.servlet.MainServlet.doGet(MainServlet.java:18) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:52) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:374) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:565) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:307) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:428) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:232) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:141) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.DBManager.getConnection(DBManager.java:52) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:296) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findAll(AbstractDAOImpl.java:107) ~[classes/:?]
+	at web.service.CategoryService.getAllCategories(CategoryService.java:20) ~[classes/:?]
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:28) ~[classes/:?]
+	... 33 more
+13:07:14.390 [http-nio-8080-exec-8] ERROR - Can not obtain a connection
+web.exception.DBException: Can not obtain a connection
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:33) [classes/:?]
+	at web.servlet.MainServlet.doGet(MainServlet.java:18) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:52) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:374) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:565) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:307) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:428) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:232) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:141) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.DBManager.getConnection(DBManager.java:52) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:296) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findAll(AbstractDAOImpl.java:107) ~[classes/:?]
+	at web.service.CategoryService.getAllCategories(CategoryService.java:20) ~[classes/:?]
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:28) ~[classes/:?]
+	... 33 more
+13:07:14.992 [http-nio-8080-exec-10] ERROR - Can not obtain a connection
+web.exception.DBException: Can not obtain a connection
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:33) [classes/:?]
+	at web.servlet.MainServlet.doGet(MainServlet.java:18) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:52) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:374) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:565) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:307) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:428) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:232) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:141) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.DBManager.getConnection(DBManager.java:52) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:296) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findAll(AbstractDAOImpl.java:107) ~[classes/:?]
+	at web.service.CategoryService.getAllCategories(CategoryService.java:20) ~[classes/:?]
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:28) ~[classes/:?]
+	... 33 more
+13:07:15.727 [http-nio-8080-exec-2] ERROR - Can not obtain a connection
+web.exception.DBException: Can not obtain a connection
+	at web.controller.commads.CategoryController.execute(CategoryController.java:157) [classes/:?]
+	at web.servlet.MainServlet.doGet(MainServlet.java:18) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:52) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:374) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:565) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:307) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:428) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:232) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:141) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.DBManager.getConnection(DBManager.java:52) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.FindAllForOneToMany(AbstractDAOImpl.java:352) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:308) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findAll(AbstractDAOImpl.java:107) ~[classes/:?]
+	at web.service.CategoryService.getAllGeneralCategories(CategoryService.java:16) ~[classes/:?]
+	at web.controller.commads.CategoryController.execute(CategoryController.java:31) ~[classes/:?]
+	... 33 more
+13:07:17.443 [http-nio-8080-exec-6] ERROR - Can not obtain a connection
+web.exception.DBException: Can not obtain a connection
+	at web.controller.commads.CategoryController.execute(CategoryController.java:157) [classes/:?]
+	at web.servlet.MainServlet.doGet(MainServlet.java:18) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:52) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:374) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:565) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:307) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:428) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:232) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:141) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.DBManager.getConnection(DBManager.java:52) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.FindAllForOneToMany(AbstractDAOImpl.java:352) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:308) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findAll(AbstractDAOImpl.java:107) ~[classes/:?]
+	at web.service.CategoryService.getAllGeneralCategories(CategoryService.java:16) ~[classes/:?]
+	at web.controller.commads.CategoryController.execute(CategoryController.java:31) ~[classes/:?]
+	... 33 more
+13:07:19.715 [http-nio-8080-exec-9] ERROR - Can not obtain a connection
+web.exception.DBException: Can not obtain a connection
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:33) [classes/:?]
+	at web.servlet.MainServlet.doGet(MainServlet.java:18) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:52) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:374) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:565) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:307) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:428) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:232) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:141) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.DBManager.getConnection(DBManager.java:52) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:296) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findAll(AbstractDAOImpl.java:107) ~[classes/:?]
+	at web.service.CategoryService.getAllCategories(CategoryService.java:20) ~[classes/:?]
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:28) ~[classes/:?]
+	... 33 more
+13:07:20.478 [http-nio-8080-exec-1] ERROR - Can not obtain a connection
+web.exception.DBException: Can not obtain a connection
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:33) [classes/:?]
+	at web.servlet.MainServlet.doGet(MainServlet.java:18) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:52) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:374) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:565) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:307) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:428) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:232) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:141) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.DBManager.getConnection(DBManager.java:52) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:296) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findAll(AbstractDAOImpl.java:107) ~[classes/:?]
+	at web.service.CategoryService.getAllCategories(CategoryService.java:20) ~[classes/:?]
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:28) ~[classes/:?]
+	... 33 more
+13:07:21.111 [http-nio-8080-exec-3] ERROR - Can not obtain a connection
+web.exception.DBException: Can not obtain a connection
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:33) [classes/:?]
+	at web.servlet.MainServlet.doGet(MainServlet.java:18) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:52) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:374) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:565) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:307) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:428) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:232) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:141) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.DBManager.getConnection(DBManager.java:52) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:296) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findAll(AbstractDAOImpl.java:107) ~[classes/:?]
+	at web.service.CategoryService.getAllCategories(CategoryService.java:20) ~[classes/:?]
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:28) ~[classes/:?]
+	... 33 more
+13:08:39.624 [http-nio-8080-exec-4] INFO  - User 2 logged in
+13:09:10.855 [http-nio-8080-exec-3] INFO  - Update data in table master. Id - 1
+13:09:10.863 [http-nio-8080-exec-3] INFO  - Update data in table user. Id - 2
+13:09:10.864 [http-nio-8080-exec-3] INFO  - User (2 userId) update own profile.
+13:09:17.672 [http-nio-8080-exec-6] INFO  - User 2 logged out
+13:09:26.778 [http-nio-8080-exec-3] INFO  - User 1 logged in
+13:09:30.369 [http-nio-8080-exec-8] INFO  - User 1 logged out
+13:09:34.672 [http-nio-8080-exec-10] INFO  - User 2 logged in
+13:09:50.086 [http-nio-8080-exec-8] ERROR - Can not obtain a connection
+web.exception.DBException: Can not obtain a connection
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:33) [classes/:?]
+	at web.servlet.MainServlet.doGet(MainServlet.java:18) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:52) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:374) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:565) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:307) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:428) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:232) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:141) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.DBManager.getConnection(DBManager.java:52) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:329) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findAll(AbstractDAOImpl.java:107) ~[classes/:?]
+	at web.service.CategoryService.getAllCategories(CategoryService.java:20) ~[classes/:?]
+	at web.controller.commads.ProfileCabinetController.execute(ProfileCabinetController.java:28) ~[classes/:?]
+	... 33 more
+13:10:18.783 [http-nio-8080-exec-3] INFO  - User 2 logged out
+13:10:25.657 [http-nio-8080-exec-4] INFO  - User 2 logged in
+13:10:25.662 [http-nio-8080-exec-4] ERROR - Can not obtain a connection
+web.exception.DBException: Can not obtain a connection
+	at web.controller.commads.LogInController.execute(LogInController.java:50) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:26) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:52) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:374) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:565) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:307) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:428) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:232) ~[commons-pool2-2.10.0.jar:2.10.0]
+	at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:141) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.DBManager.getConnection(DBManager.java:52) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:296) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findElementsBySQlRequest(AbstractDAOImpl.java:60) ~[classes/:?]
+	at web.service.MasterService.getMasterByUserId(MasterService.java:48) ~[classes/:?]
+	at web.controller.commads.LogInController.execute(LogInController.java:41) ~[classes/:?]
+	... 33 more
+13:10:29.184 [http-nio-8080-exec-9] INFO  - User 2 logged out
+13:13:53.356 [http-nio-8080-exec-5] INFO  - User 2 logged in
+13:14:00.950 [http-nio-8080-exec-1] INFO  - Update data in table master. Id - 1
+13:14:00.959 [http-nio-8080-exec-1] INFO  - Update data in table user. Id - 2
+13:14:00.960 [http-nio-8080-exec-1] INFO  - User (2 userId) update own profile.
+13:14:28.287 [http-nio-8080-exec-6] INFO  - User 2 logged out
+13:14:33.613 [http-nio-8080-exec-10] INFO  - User 2 logged in
+13:20:35.154 [main] INFO  - Insert new data in table comment. Id - 7
+13:20:35.341 [main] INFO  - Delete data in table comment. Id - 7
+13:21:55.353 [main] INFO  - Insert new data in table comment. Id - 8
+13:22:16.413 [main] INFO  - Delete data in table comment. Id - 8
+15:10:09.793 [http-nio-8080-exec-7] INFO  - User 2 logged in
+15:10:14.509 [http-nio-8080-exec-1] INFO  - Update data in table master. Id - 1
+15:10:14.517 [http-nio-8080-exec-1] INFO  - Update data in table user. Id - 2
+15:10:14.518 [http-nio-8080-exec-1] INFO  - User (2 userId) update own profile.
+15:10:21.508 [http-nio-8080-exec-1] INFO  - User 2 logged out
+15:10:26.558 [http-nio-8080-exec-3] INFO  - User 2 logged in
+15:10:31.380 [http-nio-8080-exec-9] INFO  - User 2 logged out
+20:19:36.068 [main] INFO  - Insert new data in table comment. Id - 9
+20:19:36.657 [main] INFO  - Delete data in table comment. Id - 9
+20:20:50.784 [main] INFO  - Update data in table master. Id - 1
+20:22:01.242 [main] INFO  - Update data in table master. Id - 1
+20:25:35.200 [main] INFO  - Insert new data in table comment. Id - 10
+20:25:35.356 [main] INFO  - Delete data in table comment. Id - 10
+20:26:03.156 [main] INFO  - Insert new data in table comment. Id - 11
+20:26:03.578 [main] INFO  - Delete data in table comment. Id - 11
+20:26:05.078 [main] INFO  - Update data in table master. Id - 1
+20:26:57.669 [main] INFO  - Insert new data in table comment. Id - 12
+20:26:57.856 [main] INFO  - Delete data in table comment. Id - 12
+20:26:59.423 [main] INFO  - Update data in table master. Id - 1
+13:36:38.194 [http-nio-8080-exec-2] INFO  - User 2 logged in
+13:36:45.548 [http-nio-8080-exec-8] INFO  - Master (2 userId) received data
+13:37:06.772 [http-nio-8080-exec-2] INFO  - Master (2 userId) received data
+13:37:08.853 [http-nio-8080-exec-4] INFO  - Master (2 userId) received data
+13:37:16.840 [http-nio-8080-exec-6] INFO  - Master (2 userId) received data
+13:37:18.411 [http-nio-8080-exec-8] INFO  - Master (2 userId) received data
+13:37:24.157 [http-nio-8080-exec-9] INFO  - User 2 logged out
+13:37:29.997 [http-nio-8080-exec-3] INFO  - User 9 logged in
+13:37:56.150 [http-nio-8080-exec-3] INFO  - Insert new data in table orders. Id - 8
+13:37:56.150 [http-nio-8080-exec-3] INFO  - User (9 userId) made new recording (8 orderId).
+13:39:14.603 [http-nio-8080-exec-9] INFO  - User 9 logged in
+13:41:52.535 [http-nio-8080-exec-4] INFO  - Insert new data in table orders. Id - 9
+13:42:06.251 [http-nio-8080-exec-4] INFO  - User (9 userId) made new recording (9 orderId).
+14:06:05.976 [http-nio-8080-exec-4] INFO  - User 9 logged in
+14:07:33.587 [http-nio-8080-exec-5] INFO  - User 9 logged in
+17:11:27.140 [http-nio-8080-exec-8] INFO  - User 9 logged in
+17:14:45.475 [http-nio-8080-exec-5] INFO  - Insert new data in table orders. Id - 10
+17:14:46.096 [http-nio-8080-exec-5] INFO  - User (9 userId) made new recording (10 orderId).
+19:05:26.900 [http-nio-8080-exec-4] INFO  - User 9 logged in
+19:05:26.900 [http-nio-8080-exec-5] INFO  - User 9 logged in
+19:05:53.675 [http-nio-8080-exec-2] INFO  - Insert new data in table orders. Id - 11
+19:05:53.676 [http-nio-8080-exec-2] INFO  - User (9 userId) made new recording (11 orderId).
+19:08:02.015 [http-nio-8080-exec-2] INFO  - User 9 logged in
+19:17:40.678 [http-nio-8080-exec-3] INFO  - User 9 logged in
+19:23:23.464 [http-nio-8080-exec-3] INFO  - User 9 logged in
+19:26:28.922 [http-nio-8080-exec-3] INFO  - User 9 logged in
+19:28:19.854 [http-nio-8080-exec-3] INFO  - User 9 logged in
+20:10:26.320 [http-nio-8080-exec-5] INFO  - User 9 logged in
+20:18:29.703 [http-nio-8080-exec-1] INFO  - Insert new data in table orders. Id - 12
+20:18:29.704 [http-nio-8080-exec-1] INFO  - User (9 userId) made new recording (12 orderId).
+20:24:21.472 [http-nio-8080-exec-3] INFO  - User 9 logged out
+20:46:55.076 [http-nio-8080-exec-1] INFO  - User 2 logged in
+20:46:55.076 [http-nio-8080-exec-2] INFO  - User 2 logged in
+20:46:55.265 [http-nio-8080-exec-2] ERROR - Exception while getting data from table category method findElementById
+web.exception.DBException: Exception while getting data from table category method findElementById
+	at web.controller.commads.LogInController.execute(LogInController.java:50) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:26) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLException: ResultSet is from UPDATE. No Data.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.next(ResultSetImpl.java:1771) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DelegatingResultSet.next(DelegatingResultSet.java:1160) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.DelegatingResultSet.next(DelegatingResultSet.java:1160) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.impl.AbstractDAOImpl.findElementById(AbstractDAOImpl.java:83) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:327) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findElementsBySQlRequest(AbstractDAOImpl.java:60) ~[classes/:?]
+	at web.service.MasterService.getMasterByUserId(MasterService.java:48) ~[classes/:?]
+	at web.controller.commads.LogInController.execute(LogInController.java:41) ~[classes/:?]
+	... 33 more
+20:47:09.722 [http-nio-8080-exec-5] INFO  - Master (2 userId) received data
+20:47:12.148 [http-nio-8080-exec-7] INFO  - Master (2 userId) received data
+20:47:25.968 [http-nio-8080-exec-10] INFO  - Master (2 userId) received data
+20:47:28.227 [http-nio-8080-exec-2] INFO  - Master (2 userId) received data
+20:47:38.388 [http-nio-8080-exec-4] INFO  - User 2 logged out
+20:47:42.254 [http-nio-8080-exec-6] INFO  - User 1 logged in
+20:47:52.083 [http-nio-8080-exec-9] INFO  - Admin (1 userId) received data
+20:48:33.058 [http-nio-8080-exec-3] INFO  - Update data in table orders. Id - 10
+20:48:33.060 [http-nio-8080-exec-3] INFO  - Admin 1 update 10 order.
+20:48:33.272 [http-nio-8080-exec-3] INFO  - Admin (1 userId) received data
+20:48:37.232 [http-nio-8080-exec-5] INFO  - Update data in table orders. Id - 10
+20:48:37.233 [http-nio-8080-exec-5] INFO  - Admin 1 update 10 order.
+20:48:37.400 [http-nio-8080-exec-5] INFO  - Admin (1 userId) received data
+20:49:12.169 [http-nio-8080-exec-9] INFO  - Update data in table orders. Id - 10
+20:49:12.170 [http-nio-8080-exec-9] INFO  - Admin 1 update 10 order.
+20:49:12.374 [http-nio-8080-exec-9] INFO  - Admin (1 userId) received data
+20:49:34.899 [http-nio-8080-exec-3] INFO  - User 1 logged out
+21:04:24.842 [http-nio-8080-exec-2] INFO  - User 1 logged in
+21:04:28.301 [http-nio-8080-exec-3] INFO  - Admin (1 userId) received data
+21:04:44.244 [http-nio-8080-exec-6] INFO  - Update data in table orders. Id - 10
+21:04:44.245 [http-nio-8080-exec-6] INFO  - Admin 1 update 10 order.
+21:04:44.529 [http-nio-8080-exec-6] INFO  - Admin (1 userId) received data
+21:05:36.853 [http-nio-8080-exec-10] INFO  - Update data in table orders. Id - 10
+21:05:36.854 [http-nio-8080-exec-10] INFO  - Admin 1 update 10 order.
+21:05:37.125 [http-nio-8080-exec-10] INFO  - Admin (1 userId) received data
+21:06:38.879 [http-nio-8080-exec-4] INFO  - User 1 logged in
+21:06:38.879 [http-nio-8080-exec-3] INFO  - User 1 logged in
+21:06:41.362 [http-nio-8080-exec-7] INFO  - Admin (1 userId) received data
+21:19:53.844 [http-nio-8080-exec-3] INFO  - User 1 logged in
+21:19:55.844 [http-nio-8080-exec-5] INFO  - Admin (1 userId) received data
+21:20:02.816 [http-nio-8080-exec-7] INFO  - Update data in table orders. Id - 10
+21:20:02.817 [http-nio-8080-exec-7] INFO  - Admin 1 update 10 order.
+21:20:03.106 [http-nio-8080-exec-7] INFO  - Admin (1 userId) received data
+21:25:14.636 [http-nio-8080-exec-1] INFO  - Update data in table orders. Id - 10
+21:25:14.637 [http-nio-8080-exec-1] INFO  - Admin 1 update 10 order.
+21:25:14.851 [http-nio-8080-exec-1] INFO  - Admin (1 userId) received data
+21:25:54.064 [http-nio-8080-exec-2] INFO  - User 1 logged in
+21:25:57.947 [http-nio-8080-exec-4] INFO  - Admin (1 userId) received data
+21:36:06.976 [http-nio-8080-exec-3] INFO  - User 1 logged in
+21:36:09.197 [http-nio-8080-exec-6] INFO  - Admin (1 userId) received data
+21:36:14.897 [http-nio-8080-exec-8] INFO  - Update data in table orders. Id - 10
+21:36:14.898 [http-nio-8080-exec-8] INFO  - Admin 1 update 10 order.
+21:36:15.183 [http-nio-8080-exec-8] INFO  - Admin (1 userId) received data
+21:38:30.122 [http-nio-8080-exec-5] INFO  - User 1 logged in
+21:38:36.307 [http-nio-8080-exec-9] INFO  - Admin (1 userId) received data
+21:40:58.912 [http-nio-8080-exec-2] INFO  - User 1 logged in
+21:41:00.559 [http-nio-8080-exec-5] INFO  - Admin (1 userId) received data
+21:41:05.320 [http-nio-8080-exec-7] INFO  - Update data in table orders. Id - 10
+21:41:05.321 [http-nio-8080-exec-7] INFO  - Admin 1 update 10 order.
+21:41:05.638 [http-nio-8080-exec-7] INFO  - Admin (1 userId) received data
+21:41:14.079 [http-nio-8080-exec-1] INFO  - User 1 logged out
+21:42:15.517 [http-nio-8080-exec-2] INFO  - User 1 logged in
+21:42:17.273 [http-nio-8080-exec-4] INFO  - Admin (1 userId) received data
+21:44:43.687 [http-nio-8080-exec-3] INFO  - User 1 logged in
+21:44:46.600 [http-nio-8080-exec-5] INFO  - Admin (1 userId) received data
+21:45:27.136 [http-nio-8080-exec-9] INFO  - Update data in table orders. Id - 10
+21:45:27.138 [http-nio-8080-exec-9] INFO  - Admin 1 update 10 order.
+21:45:27.435 [http-nio-8080-exec-9] INFO  - Admin (1 userId) received data
+21:45:35.620 [http-nio-8080-exec-1] INFO  - Update data in table orders. Id - 10
+21:45:35.620 [http-nio-8080-exec-1] INFO  - Admin 1 update 10 order.
+21:45:35.833 [http-nio-8080-exec-1] INFO  - Admin (1 userId) received data
+21:45:40.207 [http-nio-8080-exec-3] INFO  - Update data in table orders. Id - 10
+21:45:40.208 [http-nio-8080-exec-3] INFO  - Admin 1 update 10 order.
+21:45:40.403 [http-nio-8080-exec-3] INFO  - Admin (1 userId) received data
+21:45:50.104 [http-nio-8080-exec-6] INFO  - Update data in table orders. Id - 10
+21:45:50.105 [http-nio-8080-exec-6] INFO  - Admin 1 update 10 order.
+21:45:50.269 [http-nio-8080-exec-6] INFO  - Admin (1 userId) received data
+21:46:00.121 [http-nio-8080-exec-8] INFO  - User 1 logged out
+21:46:03.808 [http-nio-8080-exec-10] INFO  - User 9 logged in
+21:46:21.746 [http-nio-8080-exec-1] INFO  - User 9 logged out
+12:07:40.070 [http-nio-8080-exec-4] INFO  - User 1 logged in
+12:07:40.070 [http-nio-8080-exec-1] INFO  - User 1 logged in
+12:08:14.317 [http-nio-8080-exec-6] INFO  - Admin (1 userId) received data
+12:08:40.685 [http-nio-8080-exec-10] INFO  - Update data in table orders. Id - 10
+12:08:40.686 [http-nio-8080-exec-10] INFO  - Admin 1 update 10 order.
+12:08:41.211 [http-nio-8080-exec-10] INFO  - Admin (1 userId) received data
+12:09:02.582 [http-nio-8080-exec-3] INFO  - Update data in table orders. Id - 2
+12:09:02.583 [http-nio-8080-exec-3] INFO  - Admin 1 update 2 order.
+12:09:02.825 [http-nio-8080-exec-3] INFO  - Admin (1 userId) received data
+12:09:07.068 [http-nio-8080-exec-8] INFO  - Admin (1 userId) received data
+12:09:09.727 [http-nio-8080-exec-10] INFO  - Admin (1 userId) received data
+12:09:16.560 [http-nio-8080-exec-3] INFO  - Admin (1 userId) received data
+12:09:24.864 [http-nio-8080-exec-8] INFO  - Admin (1 userId) received data
+12:09:27.702 [http-nio-8080-exec-10] INFO  - User 1 logged out
+12:22:55.202 [http-nio-8080-exec-1] INFO  - User 1 logged in
+12:23:08.478 [http-nio-8080-exec-5] INFO  - Admin (1 userId) received data
+12:23:15.112 [http-nio-8080-exec-9] INFO  - Admin (1 userId) received data
+12:23:22.938 [http-nio-8080-exec-3] INFO  - Admin (1 userId) received data
+12:23:27.315 [http-nio-8080-exec-8] INFO  - Delete data in table orders. Id - 2
+12:23:27.317 [http-nio-8080-exec-8] INFO  - Admin 1 deleted 2 order.
+12:23:27.610 [http-nio-8080-exec-8] INFO  - Admin (1 userId) received data
+12:23:58.066 [http-nio-8080-exec-1] INFO  - Update data in table orders. Id - 10
+12:23:58.067 [http-nio-8080-exec-1] INFO  - Admin 1 update 10 order.
+12:23:58.286 [http-nio-8080-exec-1] INFO  - Admin (1 userId) received data
+12:24:01.805 [http-nio-8080-exec-3] INFO  - Update data in table orders. Id - 10
+12:24:01.805 [http-nio-8080-exec-3] INFO  - Admin 1 update 10 order.
+12:24:01.987 [http-nio-8080-exec-3] INFO  - Admin (1 userId) received data
+12:24:07.952 [http-nio-8080-exec-8] INFO  - Update data in table orders. Id - 10
+12:24:07.953 [http-nio-8080-exec-8] INFO  - Admin 1 update 10 order.
+12:24:08.112 [http-nio-8080-exec-8] INFO  - Admin (1 userId) received data
+12:24:30.087 [http-nio-8080-exec-1] INFO  - Update data in table orders. Id - 10
+12:24:30.087 [http-nio-8080-exec-1] INFO  - Admin 1 update 10 order.
+12:24:30.242 [http-nio-8080-exec-1] INFO  - Admin (1 userId) received data
+12:24:37.482 [http-nio-8080-exec-6] INFO  - Update data in table orders. Id - 10
+12:24:37.482 [http-nio-8080-exec-6] INFO  - Admin 1 update 10 order.
+12:24:37.626 [http-nio-8080-exec-6] INFO  - Admin (1 userId) received data
+12:24:45.005 [http-nio-8080-exec-8] INFO  - Update data in table orders. Id - 10
+12:24:45.006 [http-nio-8080-exec-8] INFO  - Admin 1 update 10 order.
+12:24:45.152 [http-nio-8080-exec-8] INFO  - Admin (1 userId) received data
+12:24:47.331 [http-nio-8080-exec-9] INFO  - User 1 logged out
+12:24:53.085 [http-nio-8080-exec-2] INFO  - User 9 logged in
+12:25:29.870 [http-nio-8080-exec-1] INFO  - Insert new data in table orders. Id - 13
+12:25:29.871 [http-nio-8080-exec-1] INFO  - User (9 userId) made new recording (13 orderId).
+12:26:11.227 [http-nio-8080-exec-10] INFO  - User 9 logged out
+12:26:16.564 [http-nio-8080-exec-2] INFO  - User 1 logged in
+12:26:21.579 [http-nio-8080-exec-3] INFO  - Admin (1 userId) received data
+12:26:27.735 [http-nio-8080-exec-10] INFO  - Admin (1 userId) received data
+12:26:31.709 [http-nio-8080-exec-1] INFO  - Admin (1 userId) received data
+12:26:54.964 [http-nio-8080-exec-3] INFO  - Update data in table orders. Id - 13
+12:26:54.965 [http-nio-8080-exec-3] INFO  - Admin 1 update 13 order.
+12:26:55.100 [http-nio-8080-exec-3] INFO  - Admin (1 userId) received data
+12:27:09.307 [http-nio-8080-exec-10] INFO  - Update data in table orders. Id - 13
+12:27:09.308 [http-nio-8080-exec-10] INFO  - Admin 1 update 13 order.
+12:27:09.401 [http-nio-8080-exec-10] INFO  - Admin (1 userId) received data
+12:27:23.778 [http-nio-8080-exec-6] INFO  - User 1 logged out
+12:30:09.727 [http-nio-8080-exec-1] INFO  - User 1 logged in
+12:30:12.710 [http-nio-8080-exec-3] INFO  - Admin (1 userId) received data
+12:43:55.533 [http-nio-8080-exec-5] INFO  - User 1 logged in
+12:44:02.504 [http-nio-8080-exec-9] INFO  - Admin (1 userId) received data
+12:44:09.443 [http-nio-8080-exec-2] INFO  - Update data in table orders. Id - 13
+12:44:09.443 [http-nio-8080-exec-2] INFO  - Admin 1 update 13 order.
+12:44:09.715 [http-nio-8080-exec-2] INFO  - Admin (1 userId) received data
+12:44:15.203 [http-nio-8080-exec-5] INFO  - Update data in table orders. Id - 13
+12:44:15.204 [http-nio-8080-exec-5] INFO  - Admin 1 update 13 order.
+12:44:15.446 [http-nio-8080-exec-5] INFO  - Admin (1 userId) received data
+12:44:54.522 [http-nio-8080-exec-9] INFO  - Delete data in table orders. Id - 13
+12:44:54.522 [http-nio-8080-exec-9] INFO  - Admin 1 deleted 13 order.
+12:44:54.727 [http-nio-8080-exec-9] INFO  - Admin (1 userId) received data
+12:45:04.222 [http-nio-8080-exec-2] INFO  - Update data in table orders. Id - 10
+12:45:04.222 [http-nio-8080-exec-2] INFO  - Admin 1 update 10 order.
+12:45:04.436 [http-nio-8080-exec-2] INFO  - Admin (1 userId) received data
+12:45:13.607 [http-nio-8080-exec-8] INFO  - Update data in table orders. Id - 10
+12:45:13.608 [http-nio-8080-exec-8] INFO  - Admin 1 update 10 order.
+12:45:13.764 [http-nio-8080-exec-8] INFO  - Admin (1 userId) received data
+12:45:28.881 [http-nio-8080-exec-9] INFO  - Update data in table orders. Id - 10
+12:45:28.882 [http-nio-8080-exec-9] INFO  - Admin 1 update 10 order.
+12:45:29.005 [http-nio-8080-exec-9] INFO  - Admin (1 userId) received data
+12:45:37.271 [http-nio-8080-exec-2] INFO  - Update data in table orders. Id - 10
+12:45:37.272 [http-nio-8080-exec-2] INFO  - Admin 1 update 10 order.
+12:45:37.428 [http-nio-8080-exec-2] INFO  - Admin (1 userId) received data
+12:46:08.390 [http-nio-8080-exec-8] INFO  - Update data in table orders. Id - 11
+12:46:08.391 [http-nio-8080-exec-8] INFO  - Admin 1 update 11 order.
+12:46:08.554 [http-nio-8080-exec-8] INFO  - Admin (1 userId) received data
+12:46:13.988 [http-nio-8080-exec-9] INFO  - Update data in table orders. Id - 11
+12:46:13.989 [http-nio-8080-exec-9] INFO  - Admin 1 update 11 order.
+12:46:14.253 [http-nio-8080-exec-9] INFO  - Admin (1 userId) received data
+12:46:21.425 [http-nio-8080-exec-1] INFO  - Update data in table orders. Id - 11
+12:46:21.426 [http-nio-8080-exec-1] INFO  - Admin 1 update 11 order.
+12:46:21.550 [http-nio-8080-exec-1] INFO  - Admin (1 userId) received data
+12:47:09.909 [http-nio-8080-exec-3] INFO  - User 1 logged in
+12:47:12.798 [http-nio-8080-exec-5] INFO  - Admin (1 userId) received data
+12:49:12.283 [http-nio-8080-exec-9] INFO  - Update data in table orders. Id - 11
+12:49:12.286 [http-nio-8080-exec-9] INFO  - Admin 1 update 11 order.
+12:49:13.655 [http-nio-8080-exec-9] INFO  - Admin (1 userId) received data
+12:49:41.646 [http-nio-8080-exec-3] INFO  - Update data in table orders. Id - 11
+12:49:41.646 [http-nio-8080-exec-3] INFO  - Admin 1 update 11 order.
+12:49:42.019 [http-nio-8080-exec-3] INFO  - Admin (1 userId) received data
+12:59:57.909 [http-nio-8080-exec-4] INFO  - User 1 logged in
+12:59:59.843 [http-nio-8080-exec-6] INFO  - Admin (1 userId) received data
+13:00:08.254 [http-nio-8080-exec-10] INFO  - Update data in table orders. Id - 11
+13:00:08.255 [http-nio-8080-exec-10] INFO  - Admin 1 update 11 order.
+13:00:08.528 [http-nio-8080-exec-10] INFO  - Admin (1 userId) received data
+13:00:12.807 [http-nio-8080-exec-2] INFO  - Update data in table orders. Id - 11
+13:00:12.807 [http-nio-8080-exec-2] INFO  - Admin 1 update 11 order.
+13:00:13.002 [http-nio-8080-exec-2] INFO  - Admin (1 userId) received data
+13:00:22.483 [http-nio-8080-exec-6] INFO  - Update data in table orders. Id - 11
+13:00:22.484 [http-nio-8080-exec-6] INFO  - Admin 1 update 11 order.
+13:00:22.703 [http-nio-8080-exec-6] INFO  - Admin (1 userId) received data
+13:00:24.713 [http-nio-8080-exec-10] INFO  - User 1 logged out
+13:00:28.482 [http-nio-8080-exec-2] INFO  - User 9 logged in
+13:00:42.493 [http-nio-8080-exec-9] ERROR - Exception while getting data from table orders method findElementsBySQlRequest
+web.exception.DBException: Exception while getting data from table orders method findElementsBySQlRequest
+	at web.controller.commads.NewRecordingController.execute(NewRecordingController.java:117) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:26) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'time_order asc' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:122) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:122) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.impl.AbstractDAOImpl.findElementsBySQlRequest(AbstractDAOImpl.java:58) ~[classes/:?]
+	at web.service.OrderService.getOrdersByDateOrderAndMaster(OrderService.java:40) ~[classes/:?]
+	at web.controller.commads.NewRecordingController.execute(NewRecordingController.java:77) ~[classes/:?]
+	... 33 more
+13:01:21.041 [http-nio-8080-exec-3] ERROR - Exception while getting data from table orders method findElementsBySQlRequest
+web.exception.DBException: Exception while getting data from table orders method findElementsBySQlRequest
+	at web.controller.commads.NewRecordingController.execute(NewRecordingController.java:117) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:26) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'time_order asc' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:122) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:122) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.impl.AbstractDAOImpl.findElementsBySQlRequest(AbstractDAOImpl.java:58) ~[classes/:?]
+	at web.service.OrderService.getOrdersByDateOrderAndMaster(OrderService.java:40) ~[classes/:?]
+	at web.controller.commads.NewRecordingController.execute(NewRecordingController.java:77) ~[classes/:?]
+	... 33 more
+13:01:30.746 [http-nio-8080-exec-7] ERROR - Exception while getting data from table orders method findElementsBySQlRequest
+web.exception.DBException: Exception while getting data from table orders method findElementsBySQlRequest
+	at web.controller.commads.NewRecordingController.execute(NewRecordingController.java:117) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:26) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'time_order asc' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:122) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:122) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.impl.AbstractDAOImpl.findElementsBySQlRequest(AbstractDAOImpl.java:58) ~[classes/:?]
+	at web.service.OrderService.getOrdersByDateOrderAndMaster(OrderService.java:40) ~[classes/:?]
+	at web.controller.commads.NewRecordingController.execute(NewRecordingController.java:77) ~[classes/:?]
+	... 33 more
+13:04:28.835 [http-nio-8080-exec-9] INFO  - User 9 logged in
+13:05:43.423 [http-nio-8080-exec-6] ERROR - Exception while getting data from table orders method findElementsBySQlRequest
+web.exception.DBException: Exception while getting data from table orders method findElementsBySQlRequest
+	at web.controller.commads.NewRecordingController.execute(NewRecordingController.java:117) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:26) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'time_order asc' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:122) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:122) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.impl.AbstractDAOImpl.findElementsBySQlRequest(AbstractDAOImpl.java:58) ~[classes/:?]
+	at web.service.OrderService.getOrdersByDateOrderAndMaster(OrderService.java:40) ~[classes/:?]
+	at web.controller.commads.NewRecordingController.execute(NewRecordingController.java:77) ~[classes/:?]
+	... 33 more
+13:09:57.124 [http-nio-8080-exec-5] INFO  - User 9 logged in
+13:11:05.914 [http-nio-8080-exec-3] INFO  - User 9 logged out
+10:36:52.991 [http-nio-8080-exec-2] INFO  - User 2 logged in
+10:36:52.991 [http-nio-8080-exec-1] INFO  - User 2 logged in
+10:36:53.415 [http-nio-8080-exec-2] ERROR - Exception while getting data from table category method readNextElement
+web.exception.DBException: Exception while getting data from table category method readNextElement
+	at web.controller.commads.LogInController.execute(LogInController.java:50) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:26) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLException: Operation not allowed after ResultSet closed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.checkClosed(ResultSetImpl.java:470) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:577) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getObject(ResultSetImpl.java:1427) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.Jdbc41Bridge.getObject(Jdbc41Bridge.java:266) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.DelegatingResultSet.getObject(DelegatingResultSet.java:773) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.Jdbc41Bridge.getObject(Jdbc41Bridge.java:266) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.DelegatingResultSet.getObject(DelegatingResultSet.java:773) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:288) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findElementById(AbstractDAOImpl.java:84) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:327) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findElementsBySQlRequest(AbstractDAOImpl.java:60) ~[classes/:?]
+	at web.service.MasterService.getMasterByUserId(MasterService.java:48) ~[classes/:?]
+	at web.controller.commads.LogInController.execute(LogInController.java:41) ~[classes/:?]
+	... 33 more
+10:36:53.415 [http-nio-8080-exec-1] ERROR - Exception while getting data from table category method findElementById
+web.exception.DBException: Exception while getting data from table category method findElementById
+	at web.controller.commads.LogInController.execute(LogInController.java:50) [classes/:?]
+	at web.servlet.MainServlet.doPost(MainServlet.java:26) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.ValidationDataFilter.doFilter(ValidationDataFilter.java:34) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at web.filter.RoleCheckFilter.doFilter(RoleCheckFilter.java:38) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.63]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.63]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.63]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.63]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.63]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.63]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.63]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.63]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.sql.SQLException: ResultSet is from UPDATE. No Data.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.next(ResultSetImpl.java:1771) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at org.apache.commons.dbcp2.DelegatingResultSet.next(DelegatingResultSet.java:1160) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at org.apache.commons.dbcp2.DelegatingResultSet.next(DelegatingResultSet.java:1160) ~[commons-dbcp2-2.9.0.jar:2.9.0]
+	at web.repository.impl.AbstractDAOImpl.findElementById(AbstractDAOImpl.java:83) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.readNextElement(AbstractDAOImpl.java:327) ~[classes/:?]
+	at web.repository.impl.AbstractDAOImpl.findElementsBySQlRequest(AbstractDAOImpl.java:60) ~[classes/:?]
+	at web.service.MasterService.getMasterByUserId(MasterService.java:48) ~[classes/:?]
+	at web.controller.commads.LogInController.execute(LogInController.java:41) ~[classes/:?]
+	... 33 more
+10:42:37.029 [http-nio-8080-exec-3] INFO  - User 2 logged in
+10:43:55.546 [http-nio-8080-exec-10] INFO  - Master (2 userId) received data
+11:04:05.270 [http-nio-8080-exec-4] INFO  - User 9 logged in
+11:06:00.296 [http-nio-8080-exec-10] INFO  - User 9 logged out
+11:06:04.922 [http-nio-8080-exec-3] INFO  - User 2 logged in
+11:06:06.974 [http-nio-8080-exec-5] INFO  - Master (2 userId) received data
+11:06:09.918 [http-nio-8080-exec-8] INFO  - User 2 logged out
+11:06:14.615 [http-nio-8080-exec-10] INFO  - User 1 logged in
+11:06:17.361 [http-nio-8080-exec-4] INFO  - Admin (1 userId) received data
+11:06:25.480 [http-nio-8080-exec-5] INFO  - Admin (1 userId) received data
+11:06:27.579 [http-nio-8080-exec-8] INFO  - Admin (1 userId) received data
+11:06:48.065 [http-nio-8080-exec-3] INFO  - User 1 logged out
+11:06:55.298 [http-nio-8080-exec-4] INFO  - User 9 logged in
+11:09:00.124 [main] INFO  - Insert new data in table comment. Id - 13
+11:09:00.734 [main] INFO  - Delete data in table comment. Id - 13
+11:20:42.152 [http-nio-8080-exec-4] INFO  - User 9 logged in
+11:40:52.819 [http-nio-8080-exec-6] INFO  - User 9 logged in
+11:48:45.081 [http-nio-8080-exec-5] INFO  - User 9 logged in
+11:54:12.814 [http-nio-8080-exec-7] INFO  - User 9 logged out
+12:07:23.092 [http-nio-8080-exec-1] INFO  - User 9 logged in
+12:17:18.995 [http-nio-8080-exec-4] INFO  - User 9 logged in
+12:34:03.503 [http-nio-8080-exec-4] INFO  - User 9 logged in
+12:34:31.284 [http-nio-8080-exec-5] INFO  - User 9 logged out
+12:55:01.386 [http-nio-8080-exec-1] INFO  - User 9 logged in
+15:10:51.259 [http-nio-8080-exec-8] INFO  - User 2 logged in
+15:11:15.663 [http-nio-8080-exec-4] INFO  - Master (2 userId) received data
+15:11:57.994 [http-nio-8080-exec-9] INFO  - User 2 logged out
+15:12:04.234 [http-nio-8080-exec-2] INFO  - User 9 logged in
+15:23:35.772 [http-nio-8080-exec-5] INFO  - User 1 logged in
+15:23:47.317 [http-nio-8080-exec-9] INFO  - Admin (1 userId) received data
+15:23:59.324 [http-nio-8080-exec-2] INFO  - Update data in table orders. Id - 8
+15:23:59.325 [http-nio-8080-exec-2] INFO  - Admin 1 update 8 order.
+15:23:59.568 [http-nio-8080-exec-2] INFO  - Admin (1 userId) received data
+15:24:02.988 [http-nio-8080-exec-6] INFO  - User 1 logged out
+15:24:09.544 [http-nio-8080-exec-8] INFO  - User 9 logged in
+15:26:17.156 [http-nio-8080-exec-3] INFO  - User 1 logged in
+15:26:19.320 [http-nio-8080-exec-5] INFO  - Admin (1 userId) received data
+16:23:01.315 [http-nio-8080-exec-3] INFO  - User 9 logged in
+16:28:00.096 [http-nio-8080-exec-4] INFO  - User 9 logged in
+16:45:41.644 [http-nio-8080-exec-5] INFO  - User 9 logged in
+17:00:31.620 [http-nio-8080-exec-6] INFO  - User 9 logged in
+17:32:50.627 [http-nio-8080-exec-9] INFO  - User 9 logged in
+17:37:31.854 [http-nio-8080-exec-5] INFO  - User 9 logged in
+18:27:09.188 [http-nio-8080-exec-2] INFO  - User 9 logged in
+20:27:56.984 [http-nio-8080-exec-6] INFO  - User 9 logged in
+20:29:50.925 [http-nio-8080-exec-3] INFO  - User 9 logged in
+20:44:44.467 [http-nio-8080-exec-3] INFO  - User 9 logged out
+20:44:50.442 [http-nio-8080-exec-6] INFO  - User 9 logged in
+21:22:25.493 [http-nio-8080-exec-2] INFO  - User 9 logged in
+21:41:49.273 [http-nio-8080-exec-2] INFO  - User 9 logged in
+21:44:24.292 [http-nio-8080-exec-2] INFO  - User 9 logged in
+21:44:24.292 [http-nio-8080-exec-4] INFO  - User 9 logged in
+21:47:16.213 [http-nio-8080-exec-2] INFO  - User 9 logged in
+21:48:38.771 [http-nio-8080-exec-2] INFO  - User 9 logged in
+21:48:38.771 [http-nio-8080-exec-3] INFO  - User 9 logged in
+21:52:26.702 [http-nio-8080-exec-3] INFO  - User 9 logged in
