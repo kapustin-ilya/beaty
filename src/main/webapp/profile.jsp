@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 
+<fmt:setLocale value="${lang}"/>
+<fmt:setBundle basename="messages"/>
+
 <div id="profile-cabinet" style = "background-color: #ffffff; width: 300px; border: 2px solid; position: absolute; top: 75px; left: 500px; z-index: 100;
     <c:if test="${empty profileCabinet}">
         display: none;

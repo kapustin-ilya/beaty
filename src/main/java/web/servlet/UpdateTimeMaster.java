@@ -100,7 +100,6 @@ public class UpdateTimeMaster extends HttpServlet {
         }
 
         Integer durationRecordingInMinute = durationRecording.getHour()*60+durationRecording.getMinute();
-        System.out.println(durationRecordingInMinute);
 
         for (int i = 0; i < listTimeOrder.size(); ){
             if (freeMinuteToNextOrder.get(freeMinuteToNextOrder.size()-i-1) >= durationRecordingInMinute){

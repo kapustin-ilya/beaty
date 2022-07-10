@@ -85,7 +85,7 @@ public class NewRecordingController implements Command {
                         timeFinishThisOrder = timeFinishThisOrder.plusHours(category.getWorkTime().getHour());
                         timeFinishThisOrder = timeFinishThisOrder.plusMinutes(category.getWorkTime().getMinute());
                     }
-                    if (timeStartThisOrder.compareTo(timeStartNewOrder)==0 || (timeStartThisOrder.isBefore(timeStartNewOrder)&&timeFinishThisOrder.isAfter(timeStartNewOrder)) || (timeStartNewOrder.isBefore(timeStartNextOrder) && timeFinishNewOrder.isBefore(timeStartNextOrder))) {
+                    if (timeStartThisOrder.compareTo(timeStartNewOrder)==0 || (timeStartThisOrder.isBefore(timeStartNewOrder)&&timeFinishThisOrder.isAfter(timeStartNewOrder)) || (timeStartNewOrder.isBefore(timeStartNextOrder) && timeFinishNewOrder.isAfter(timeStartNextOrder))) {
                         return new RecordingCabinetController().execute(req, resp);
                     }
                 }

@@ -1,20 +1,25 @@
 <%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<%@ taglib prefix = "ctg" uri="/WEB-INF/custom.tld" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+
+<fmt:setLocale value="${lang}"/>
+<fmt:setBundle basename="messages"/>
 
 <div id="user-cabinet" style = "background-color: #ffffff; border: 2px solid; position: absolute; top: 75px; left: 200px; z-index: 100;
         <c:if test="${empty userCabinet}">
            display: none;
         </c:if> " >
     <table class="table-user">
-            <tr style = "text-transform: uppercase; width: 200px">
-                <th class="table-user-th-td">Date visit</th>
-                <th class="table-user-th-td ">Time start visit</th>
-                <th class="table-user-th-td ">Time finish visit</th>
-                <th class="table-user-th-td">Master Name</th>
-                <th class="table-user-th-td">Category</th>
-                <th class="table-user-th-td">Sum visit</th>
-                <th class="table-user-th-td">Rating</th>
-                <th class="table-user-th-td">Comment</th>
+            <tr style = "width: 200px">
+                <th class="table-user-th-td"><fmt:message key="cabinet.dateVisit"/></th>
+                <th class="table-user-th-td "><fmt:message key="cabinet.timeStartVisit"/></th>
+                <th class="table-user-th-td "><fmt:message key="cabinet.timeFinishVisit"/></th>
+                <th class="table-user-th-td"><fmt:message key="cabinet.masterName"/></th>
+                <th class="table-user-th-td"><fmt:message key="cabinet.category"/></th>
+                <th class="table-user-th-td"><fmt:message key="cabinet.sumVisit"/></th>
+                <th class="table-user-th-td"><fmt:message key="cabinet.rating"/></th>
+                <th class="table-user-th-td"><fmt:message key="cabinet.comment"/></th>
             </tr>
             <c:forEach var = "orderDTO" items = "${orderDTOList}">
                 <tr>
@@ -34,7 +39,7 @@
                         <c:if test="${orderDTO.getCompleted()}">
                             <td><input type="number" name = "rating" min="1" max="5"></td>
                             <td><textarea name = "comment" rows=3 col=20>${orderDTO.getComment()}</textarea></td>
-                            <td><input type="submit"></td>
+                            <td><input type="submit" value = <fmt:message key="cabinet.send"/>></td>
                         </c:if>
                         <c:if test="${orderDTO.getCompleted() == false}">
                              <td><input type="number" name = "rating" min="1" max="5" disabled></td>
@@ -45,22 +50,7 @@
                 </tr>
             </c:forEach>
     </table>
-    <div class="pagination" style="padding-left: 40%;">
-            <c:choose>
-                <c:when test="${page - 1 > 0}">
-                    <a href="/beauty/b?command=userCabinet&page=<c:out value = "${page-1}"/>"> Previous </a>
-                </c:when>
-            </c:choose>
 
-            <c:forEach var = "i" begin = "1" end = "${numberPages}" >
-                <a <c:if test="${page == i}"> class="active" </c:if>
-                href="/beauty/b?command=userCabinet&page=<c:out value = "${i}"/>"> <c:out value = "${i}"/>   </a>
-            </c:forEach>
+    <ctg:pagination command="userCabinet"/>
 
-            <c:choose>
-                <c:when test="${page + 1 <= numberPages}">
-                    <a href="/beauty/b?command=userCabinet&page=<c:out value = "${page+1}"/>"> Next </a>
-                </c:when>
-            </c:choose>
-    </div>
 </div>

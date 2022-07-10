@@ -33,7 +33,7 @@ public class AdminCompletedController implements Command {
                 OrderService.deleteOrderById(orderId);
                 userLogger.info(String.format("Admin %d deleted %d order.", user.getId(), orderId));
             }
-            if (req.getParameter("method") != null && req.getParameter("method").equals("update") && orderId != -1){
+            if (req.getParameter("method") != null && req.getParameter("method").equals("update") && orderId != -1 && !req.getParameter("hourOrder").equals("--:--") ){
 
                 Order order = OrderService.getOrderById(orderId);
                 String completed = req.getParameter("completed");
@@ -66,7 +66,7 @@ public class AdminCompletedController implements Command {
                             timeFinishThisOrder = timeFinishThisOrder.plusHours(category.getWorkTime().getHour());
                             timeFinishThisOrder = timeFinishThisOrder.plusMinutes(category.getWorkTime().getMinute());
                         }
-                        if (timeStartThisOrder.compareTo(timeStartNewOrder)==0 ||(timeStartThisOrder.isBefore(timeStartNewOrder)&&timeFinishThisOrder.isAfter(timeStartNewOrder)) || (timeStartNewOrder.isBefore(timeStartNextOrder) && timeFinishNewOrder.isBefore(timeStartNextOrder))) {
+                        if (timeStartThisOrder.compareTo(timeStartNewOrder)==0 ||(timeStartThisOrder.isBefore(timeStartNewOrder)&&timeFinishThisOrder.isAfter(timeStartNewOrder)) || (timeStartNewOrder.isBefore(timeStartNextOrder) && timeFinishNewOrder.isAfter(timeStartNextOrder))) {
                             checkNewTime = false;
                             break;
                         }

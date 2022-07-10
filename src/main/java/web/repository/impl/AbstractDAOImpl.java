@@ -103,7 +103,7 @@ public abstract class AbstractDAOImpl<E extends Entity> implements AbstractDAO<E
         try {
             st = cn.createStatement();
             rs = st.executeQuery(SQL_FIND_ALL_ELEMENTS);
-            while (!rs.isClosed() &&  rs.next()) {
+            while (!rs.isClosed() && rs.next()) {
                 allElemetns.add(readNextElement(rs, versionOfSearch));
             }
             rs.close();

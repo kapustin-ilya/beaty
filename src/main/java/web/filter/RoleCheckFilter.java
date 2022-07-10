@@ -18,7 +18,7 @@ public class RoleCheckFilter extends HttpFilter {
 
         switch (req.getParameter("command")) {
             case "login": check = (user==null ? true : false); break;
-            case "registration": check = (user==null || user.getRoleId() == 3? true : false); break;
+            case "registration": check = (user==null || user.getRoleId() == 2? true : false); break;
             case "userCabinet": check = (user!=null && user.getRoleId() == 1 ? true : false); break;
             case "recordingCabinet": check = (user!=null && user.getRoleId() == 1 ? true : false); break;
             case "newRecording": check = (user!=null && user.getRoleId() == 1 ? true : false); break;

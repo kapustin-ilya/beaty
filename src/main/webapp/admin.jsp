@@ -1,6 +1,10 @@
 <%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix = "ctg" uri="/WEB-INF/custom.tld" %>
+
+<fmt:setLocale value="${lang}"/>
+<fmt:setBundle basename="messages"/>
 
 <!DOCTYPE html>
 <html>
@@ -35,35 +39,29 @@
 <body>
         <jsp:include page="header.jsp" />
 
-        <jsp:useBean id="now" class="java.util.Date" scope="page"/>
-
         <br/><br/>
         <table class="table-user" style = " background-color: #ffffff; padding-left: 50px; padding-right: 50px;">
-             <tr style = "text-transform: uppercase; width: 200px">
-                 <td class="table-user-th-td">Date visit</td>
-                 <th class="table-user-th-td ">Time start visit</th>
-                 <th class="table-user-th-td ">Duration of visit</th>
-                 <td class="table-user-th-td">Master Name</td>
-                 <td class="table-user-th-td">Client Name</td>
-                 <td class="table-user-th-td">Category</td>
-                 <td class="table-user-th-td">Sum visit</td>
-                 <td class="table-user-th-td">Comment</td>
-                 <td class="table-user-th-td">Completed</td>
-                 <td class="table-user-th-td">Paid</td>
+             <tr style = "width: 200px">
+                 <td class="table-user-th-td"><fmt:message key="admin.dateVisit"/></td>
+                 <th class="table-user-th-td"><fmt:message key="admin.timeStartVisit"/></th>
+                 <th class="table-user-th-td"><fmt:message key="admin.durationVisit"/></th>
+                 <td class="table-user-th-td"><fmt:message key="admin.masterName"/></td>
+                 <td class="table-user-th-td"><fmt:message key="admin.clientName"/></td>
+                 <td class="table-user-th-td"><fmt:message key="admin.category"/></td>
+                 <td class="table-user-th-td"><fmt:message key="admin.sumVisit"/></td>
+                 <td class="table-user-th-td"><fmt:message key="admin.comment"/></td>
+                 <td class="table-user-th-td"><fmt:message key="admin.completed"/></td>
+                 <td class="table-user-th-td"><fmt:message key="admin.paid"/></td>
              </tr>
              <c:forEach var = "orderDTO" items = "${orderDTOList}">
                   <tr>
                      <form action="/beauty/b?command=adminCompleted&method=update&orderId=${orderDTO.getId()}" method="POST">
-                        <td class="table-user-th-td"><input type="date" name="dateOrder" value="${orderDTO.getDateOrder()}" scope="request" min="${localDate}" ></td>
+                        <td class="table-user-th-td"><input id="<c:out value = "${orderDTO.getId()}-date-order"/>" type="date" name="dateOrder" value="${orderDTO.getDateOrder()}" scope="request" min="${localDate}" ></td>
                         <td class="table-user-th-td">
-                          <select name = "hourOrder" scope="request">
+                          <select id="<c:out value = "${orderDTO.getId()}-time-order"/>" name = "hourOrder" scope="request">
                                 <option><c:out value = "${orderDTO.getHourOrder()}"/></option>
-                                <option>--:--</option>
-                                <c:forEach var = "i" begin = "10" end = "20">
-                                     <option value="<c:out value = "${i}:00"/>"><c:out value = "${i}:00"/></option>
-                                     <option value="<c:out value = "${i}:30"/>"><c:out value = "${i}:30"/></option>
-                                </c:forEach>
                           </select>
+                          <button class="update-time-order <c:out value = "${orderDTO.getId()}-IdOrder"/>"  type="button">UP</button>
                         </td>
                         <td class="table-user-th-td">${orderDTO.getDurationOrder()}</td>
                       <td class="table-user-th-td">${orderDTO.getMasterName()}</td>
@@ -91,32 +89,37 @@
                           <c:if test="${orderDTO.getPaid() eq true}">
                                 <td class="table-user-th-td"><input type="checkbox" name = "paid" checked="on" disabled></td>
                           </c:if>
-                          <td class="table-user-th-td"><input type="submit" value = "update"></td>
+                          <td class="table-user-th-td"><input type="submit" value = <fmt:message key="admin.update"/> ></td>
                      </form>
                       <form action="/beauty/b?command=adminCompleted&method=delete&orderId=${orderDTO.getId()}" method="POST">
-                           <td class="table-user-th-td"><input type="submit" value = "delete"></td>
+                           <td class="table-user-th-td"><input type="submit" value = <fmt:message key="admin.delete"/> ></td>
                       </form>
                   </tr>
              </c:forEach>
         </table>
-        <div class="pagination" style="padding-left: 40%;">
-                    <c:choose>
-                        <c:when test="${page - 1 > 0}">
-                            <a href="/beauty/b?command=adminCabinet&page=<c:out value = "${page-1}"/>"> Previous </a>
-                        </c:when>
-                    </c:choose>
 
-                    <c:forEach var = "i" begin = "1" end = "${numberPages}" >
-                        <a <c:if test="${page == i}"> class="active" </c:if>
-                        href="/beauty/b?command=adminCabinet&page=<c:out value = "${i}"/>"> <c:out value = "${i}"/>   </a>
-                    </c:forEach>
+        <ctg:pagination command="adminCabinet"/>
 
-                    <c:choose>
-                        <c:when test="${page + 1 <= numberPages}">
-                            <a href="/beauty/b?command=adminCabinet&page=<c:out value = "${page+1}"/>"> Next </a>
-                        </c:when>
-                    </c:choose>
-            </div>
+        <script>
+            $(document).ready(function(e) {
+                $('.update-time-order').on('click',function() {
+
+                    var idOrder = $(this).attr("class").split(' ')[1].split('-')[0];
+                    var dateOrder = document.getElementById(idOrder+"-date-order").value;
+
+                    var temp = idOrder+"-time-order";
+
+                    $.get('UpdateTimeAdmin', {"dateOrder": dateOrder,"idOrder": idOrder},
+                                                function(responseText) {
+                                                    document.getElementById(temp).innerHTML = responseText;
+                                                });
+
+
+
+                        });
+                     });
+
+        </script>
 
 </body>
 </html>
