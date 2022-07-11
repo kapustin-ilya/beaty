@@ -3,6 +3,7 @@ package web.controller.commads;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import web.controller.Command;
+import web.custom.HashPassword;
 import web.entities.Category;
 import web.entities.Master;
 import web.entities.User;
@@ -42,7 +43,7 @@ public class ProfileUpdateController implements Command {
 
         User user = (User) session.getAttribute("user");
 
-        user.setPassword(password);
+        user.setPassword(HashPassword.run(password));
         user.setName(name);
         user.setSername(surname);
         user.setPhoneNumber(phoneNumber);

@@ -2,6 +2,9 @@
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <%@ page import = "entities.*" %>
 <%@ page import = "java.util.*" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<fmt:setLocale value="${lang}"/>
+<fmt:setBundle basename="messages"/>
 
 
 <div id="recording-cabinet" style = "background-color: #ffffff; width: 300px; border: 2px solid; position: absolute; top: 75px; left: 500px; z-index: 100;
@@ -10,59 +13,59 @@
         </c:if> ">
     <div class="container">
         <br/>
-        <h2>Recording</h2>
+        <h2><fmt:message key="recording.recording"/></h2>
         <form action="/beauty/b?command=newRecording" method = "post">
-            <label for="master"><b>Master</b></label>
+            <label for="master"><b><fmt:message key="recording.master"/></b></label>
             <select id= "master-id" class ="profile-select master_select" name = "master">
-                <option class = "master_option" value = "-1"> All master </option>
+                <option class = "master_option" value = "-1"><fmt:message key="recording.master"/></option>
                 <c:forEach var = "master" items = "${masterList}" >
                     <option class = "master_option <c:forEach var = "category" items = "${master.getCategories()}"> <c:out value = "${category.getId()}IdCategory"/> </c:forEach> " value = "${master.getId()}"> <c:out value = "${master.getUser().getName()}"/> </option>
                 </c:forEach>
             </select>
             <br/><br/>
-            <label for="generalCategory"><b>General Category</b></label>
+            <label for="generalCategory"><b><fmt:message key="recording.generalCategory"/></b></label>
             <select class = "profile-select gCategory_select" name = "generalCategory">
-                <option class = "gCategory_option -1IdGCategory_gen_sel" value = "-1"> All general category </option>
+                <option class = "gCategory_option -1IdGCategory_gen_sel" value = "-1"><fmt:message key="recording.generalCategory"/></option>
                 <c:forEach var = "generalCategory" items = "${generalCategoryList}" >
                      <option class = "gCategory_option ${category.getGeneralCategoryId()}IdGCategory_gen_sel" value = "${generalCategory.getId()}"> <c:out value = "${generalCategory.getName()}"/> </option>
                 </c:forEach>
             </select>
 
             <br/><br/>
-            <label><b>Category</b></label>
+            <label><b><fmt:message key="cabinet.category"/></b></label>
             <select id="first-category" class = "profile-select category_select firstOrderSelect" name = "categoryFirst">
-                 <option class = "category_option -1IdGCategory_cat_sel" value = "-1"> All Category </option>
+                 <option class = "category_option -1IdGCategory_cat_sel" value = "-1"><fmt:message key="recording.allCategorys"/></option>
                  <c:forEach var = "category" items = "${categoryList}" >
                         <option class = "category_option ${category.getGeneralCategoryId()}IdGCategory_cat_sel" value = "${category.getId()}"> <c:out value = "${category.getName()}"/> </option>
                  </c:forEach>
             </select>
-            <button class = "enter-buttom-form-login addSecondOrderButton" form = "">Add category</button>
+            <button class = "enter-buttom-form-login addSecondOrderButton" form = ""><fmt:message key="recording.addCategory"/></button>
 
             <select id="second-category" class = "profile-select category_select secondOrderSelect" name = "categorySecond" style="display:none">
-                  <option class = "category_option -1IdGCategory_cat_sel" value = "-1"> All Category </option>
+                  <option class = "category_option -1IdGCategory_cat_sel" value = "-1"><fmt:message key="recording.allCategorys"/></option>
                   <c:forEach var = "category" items = "${categoryList}" >
                         <option class = "category_option ${category.getGeneralCategoryId()}IdGCategory_cat_sel" value = "${category.getId()}"> <c:out value = "${category.getName()}"/> </option>
                   </c:forEach>
             </select>
-            <button class = "enter-buttom-form-login addThirdOrderButton" form = "" style="display:none">Add category</button>
-            <button class = "enter-buttom-form-login removeSecondOrderButton" form = "" style="display:none">Remove category</button>
+            <button class = "enter-buttom-form-login addThirdOrderButton" form = "" style="display:none"><fmt:message key="recording.addCategory"/></button>
+            <button class = "enter-buttom-form-login removeSecondOrderButton" form = "" style="display:none"><fmt:message key="recording.removeCategory"/></button>
 
             <select id="third-category" class = "profile-select category_select thirdOrderSelect" name = "categoryThird" style="display:none">
-                    <option class = "category_option -1IdGCategory_cat_sel" value = "-1"> All Category </option>
+                    <option class = "category_option -1IdGCategory_cat_sel" value = "-1"><fmt:message key="recording.allCategorys"/></option>
                     <c:forEach var = "category" items = "${categoryList}" >
                            <option class = "category_option ${category.getGeneralCategoryId()}IdGCategory_cat_sel" value = "${category.getId()}"> <c:out value = "${category.getName()}"/> </option>
                     </c:forEach>
             </select>
-            <button class = "enter-buttom-form-login removeThirdOrderButton" form = "" style="display:none">Remove category</button>
+            <button class = "enter-buttom-form-login removeThirdOrderButton" form = "" style="display:none"><fmt:message key="recording.removeCategory"/></button>
             <br/><br/>
-            <label for="dateOrder"><b>Date</b></label>
+            <label for="dateOrder"><b><fmt:message key="recording.date"/></b></label>
             <input id="date-order" type="date" name = "dateOrder" min="${localDate}"/>
             <select id="time-order" name = "timeOrder">
                   <option value="<c:out value = "--:--"/>"><c:out value = "--:--"/></option>
             </select>
             <button id="getTimeOrder" type="button">UP</button>
             <br/><br/>
-            <button class="enter-buttom-form-login" type="submit">Order</button>
+            <button class="enter-buttom-form-login" type="submit"><fmt:message key="recording.order"/></button>
         </form>
     </div>
 </div>

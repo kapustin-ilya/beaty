@@ -11,17 +11,19 @@ import web.repository.impl.GeneralCategoryDAOImpl;
 import java.util.List;
 
 public class CategoryService {
+    private static GeneralCategoryDAOImpl generalCategoryDAOImpl = new GeneralCategoryDAOImpl();
+    private static CategoryDAOImpl categoryDAOImpl = new CategoryDAOImpl();
 
     public static List<GeneralCategory> getAllGeneralCategories() throws DBException, EntityException {
-        return new GeneralCategoryDAOImpl().findAll(DBManager.getInstance().getConnection(), true);
+        return generalCategoryDAOImpl.findAll(DBManager.getInstance().getConnection(), true);
     }
 
     public static List<Category> getAllCategories () throws DBException, EntityException{
-        return new CategoryDAOImpl().findAll(DBManager.getInstance().getConnection(),true);
+        return categoryDAOImpl.findAll(DBManager.getInstance().getConnection(),true);
     }
 
     public static Category getCategoryById(Integer id) throws DBException, EntityException {
-        return new CategoryDAOImpl().findElementById(DBManager.getInstance().getConnection(),id,true);
+        return categoryDAOImpl.findElementById(DBManager.getInstance().getConnection(),id,true);
     }
 
 }

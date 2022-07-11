@@ -1,0 +1,8 @@
+
+m	java:S127a"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ì‚ˆÌ
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(ÅµÄè
+Y
+java:S1155G">Use isEmpty() to check whether the collection is empty or not.(«½•œÿÿÿÿÿ
+N
+java:S1128"8Remove this unused import 'web.service.CategoryService'.(¹Œ«

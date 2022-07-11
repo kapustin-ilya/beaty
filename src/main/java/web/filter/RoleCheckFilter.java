@@ -15,8 +15,8 @@ public class RoleCheckFilter extends HttpFilter {
     public void doFilter(HttpServletRequest req, HttpServletResponse resp, FilterChain chain) throws IOException, ServletException {
         Boolean check = true;
         User user = (User) req.getSession().getAttribute("user");
-
-        switch (req.getParameter("command")) {
+        String nameCommand = req.getParameter("command") != null ?  req.getParameter("command") : "";
+        switch (nameCommand) {
             case "login": check = (user==null ? true : false); break;
             case "registration": check = (user==null || user.getRoleId() == 2? true : false); break;
             case "userCabinet": check = (user!=null && user.getRoleId() == 1 ? true : false); break;

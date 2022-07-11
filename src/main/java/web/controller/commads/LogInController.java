@@ -3,6 +3,7 @@ package web.controller.commads;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import web.controller.Command;
+import web.custom.HashPassword;
 import web.entities.Client;
 import web.entities.Master;
 import web.entities.User;
@@ -29,7 +30,7 @@ public class LogInController implements Command {
         String email = req.getParameter("email");
         String password = req.getParameter("password");
         try {
-            List<User> user = UserService.getUsersByEmailAndPassword(email,password);
+            List<User> user = UserService.getUsersByEmailAndPassword(email, HashPassword.run(password));
             if (user.size() != 0){
                 session.setAttribute("user",user.get(0));
                 userLogger.info(String.format("User %d logged in", user.get(0).getId()));

@@ -19,10 +19,10 @@
 
         <div class="container">
             <label for="email"><b><fmt:message key="enter.email"/></b></label>
-            <input type="text" placeholder="Enter Email" name="email" required>
+            <input type="email" placeholder=<fmt:message key="enter.email"/> name="email" required>
 
             <label for="password"><b><fmt:message key="enter.password"/></b></label>
-            <input type="text" placeholder="Enter Password" name="password" required>
+            <input type="password" placeholder=<fmt:message key="enter.password"/> name="password" required>
 
             <button class="enter-buttom-form-login" type="submit"><fmt:message key="enter.login"/></button>
         </div>

@@ -1,0 +1,8 @@
+
+n
+java:S2293)"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÀËöu
+t	java:S127j"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ì‚ˆÌ8™Ÿ™ù0
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(ÅµÄè
+Y
+java:S1155F">Use isEmpty() to check whether the collection is empty or not.(«½•œÿÿÿÿÿ

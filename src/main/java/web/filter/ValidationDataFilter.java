@@ -16,7 +16,8 @@ public class ValidationDataFilter extends HttpFilter {
     @Override
     public void doFilter(HttpServletRequest req, HttpServletResponse resp, FilterChain chain) throws IOException, ServletException {
         Boolean check = false;
-        switch (req.getParameter("command")) {
+        String nameCommand = req.getParameter("command") != null ?  req.getParameter("command") : "";
+        switch (nameCommand) {
             case "login": check = checkFormLogIn (req,resp); break;
             case "category": checkCategory (req,resp); check = true; break;
             case "adminCompleted": checkAdminCompleted (req,resp); check = true; break;
@@ -35,13 +36,13 @@ public class ValidationDataFilter extends HttpFilter {
     }
 
     private Boolean checkRegistration(HttpServletRequest req, HttpServletResponse resp) {
-        String email = req.getParameter("email");
-        String password = req.getParameter("password");
+        String email = req.getParameter("email")!= null ? req.getParameter("email") : "";
+        String password = req.getParameter("password")!= null ? req.getParameter("password") : "";
         return Pattern.matches("[a-zA-Z0-9]+[a-zA-Z0-9.]*\\@\\w+\\.\\w+",email) ? (password.length()>=5 ? true : false ): false;
     }
 
     private Boolean checkProfileUpdate(HttpServletRequest req, HttpServletResponse resp) {
-        String password = req.getParameter("password");
+        String password = req.getParameter("password")!= null ? req.getParameter("password") : "";
         return password.length()>=5 ? true : false;
     }
 
@@ -50,8 +51,8 @@ public class ValidationDataFilter extends HttpFilter {
         String idCategoryFirst = req.getParameter("categoryFirst");
         String idCategorySecond = req.getParameter("categorySecond");
         String idCategoryThird = req.getParameter("categoryThird");
-        String time = req.getParameter("timeOrder");
-        String date = req.getParameter("dateOrder");
+        String time = req.getParameter("timeOrder")!= null ? req.getParameter("timeOrder") : "";
+        String date = req.getParameter("dateOrder")!= null ? req.getParameter("dateOrder") : "";
         return (!idMaster.equals("-1")&&(!idCategoryFirst.equals("-1")||!idCategorySecond.equals("-1")||!idCategoryThird.equals("-1"))
                     && time != null && !date.equals("--:--")) ? true : false;
     }
@@ -85,7 +86,7 @@ public class ValidationDataFilter extends HttpFilter {
         String pageSize = req.getParameter("pageSize");
         String page = req.getParameter("page");
 
-        req.setAttribute("generalCategory",((generalCategory != null && Pattern.matches("^((\\+|-)?[1-9][0-9]*)|0$",generalCategory)) ? generalCategory: "-1"));
+        req.setAttribute("generalCategory",((generalCategory != null && Pattern.matches("^((\\+|-)?[1-9][0-9]*)|0$",generalCategory)) ? generalCategory: null));
         req.setAttribute("category",((category != null && Pattern.matches("^([1-9][0-9]*)|0$",category)) ? category : null));
         req.setAttribute("name",((name != null && (name.equals("ASC") || name.equals("DESC"))) ? name : null));
         req.setAttribute("rating",((rating != null && (rating.equals("ASC") || rating.equals("DESC"))) ? rating : null));

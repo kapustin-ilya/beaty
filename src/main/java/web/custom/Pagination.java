@@ -16,12 +16,14 @@ public class Pagination extends TagSupport {
     public int doStartTag() throws JspException {
         int numberPages = (Integer) pageContext.getSession().getAttribute("numberPages");
         int page = (Integer) pageContext.getSession().getAttribute("page");
+        String lang = (String) pageContext.getSession().getAttribute("lang");
+
 
         JspWriter out = pageContext.getOut();
         try {
             out.println("<div class=\"pagination\" style=\"padding-left: 40%;\">");
             if (page - 1 > 0){
-                out.println(String.format("<a href=\"/beauty/b?command=%s&page=%d\"> Previous </a>",command,page-1));
+                out.println(String.format("<a href=\"/beauty/b?command=%s&page=%d\"> << </a>",command,page-1));
             }
             for (int i = 1; i <= numberPages; i++){
                 if (i == page){
@@ -31,7 +33,7 @@ public class Pagination extends TagSupport {
                 }
             }
             if (page + 1 <= numberPages){
-                out.println(String.format("<a href=\"/beauty/b?command=%s&page=%d\"> Next </a>",command,page+1));
+                out.println(String.format("<a href=\"/beauty/b?command=%s&page=%d\"> >> </a>",command,page+1));
             }
             out.println("</div>");
         } catch (IOException e) {

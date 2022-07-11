@@ -13,17 +13,19 @@ import java.io.IOException;
 public class MainServlet extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        String nameCommand = req.getParameter("command");
+        resp.setCharacterEncoding("UTF-8");
+        String nameCommand = req.getParameter("command") != null ?  req.getParameter("command") : "";
         Command command = MapCommand.getCommand(nameCommand);
-        String view = command.execute(req,resp);
+        String view = command != null ? command.execute(req,resp) : "index.jsp";
         resp.sendRedirect(view);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        String nameCommand = req.getParameter("command");
+        resp.setCharacterEncoding("UTF-8");
+        String nameCommand = req.getParameter("command") != null ?  req.getParameter("command") : "";
         Command command = MapCommand.getCommand(nameCommand);
-        String view = command.execute(req,resp);
+        String view = command != null ? command.execute(req,resp) : "index.jsp";
         resp.sendRedirect(view);
     }
 }

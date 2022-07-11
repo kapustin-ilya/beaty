@@ -52,7 +52,6 @@ public class MasterService {
         return new MasterDAOImpl().countAllElement(DBManager.getInstance().getConnection(),SQLRequest, parameters );
 
     }
-
     public static List<Master> getAllMasterBySQLRequest(String sqlRequest, Object[] parametrs) throws DBException, EntityException{
         return new MasterDAOImpl().findElementsBySQlRequest(DBManager.getInstance().getConnection(),sqlRequest, true, parametrs);
     }

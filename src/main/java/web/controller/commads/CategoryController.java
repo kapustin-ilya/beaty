@@ -42,7 +42,7 @@ public class CategoryController implements Command {
             }
 
             if ((req.getAttribute("generalCategory") != null && req.getAttribute("generalCategory").equals("-1")) || idGeneralCategory==-1 ){
-                if (req.getParameter("generalCategory") != null) {
+                if (req.getAttribute("generalCategory") != null) {
                     session.removeAttribute("idCategory");
                     session.removeAttribute("search");
                     session.removeAttribute("rating");
@@ -54,7 +54,7 @@ public class CategoryController implements Command {
 
             }
             if ((req.getAttribute("generalCategory") != null && !req.getAttribute("generalCategory").equals("-1")) || idGeneralCategory!=-1) {
-                if (req.getParameter("generalCategory") != null) {
+                if (req.getAttribute("generalCategory") != null) {
                     session.removeAttribute("idCategory");
                     session.removeAttribute("search");
                     session.removeAttribute("rating");
@@ -71,7 +71,7 @@ public class CategoryController implements Command {
                 parameters.add(idGeneralCategory);
             }
             if (req.getAttribute("category") != null || session.getAttribute("idCategory") != null){
-                if (req.getParameter("category") != null) {
+                if (req.getAttribute("category") != null) {
                     session.removeAttribute("search");
                     session.removeAttribute("rating");
                     session.removeAttribute("name");
@@ -79,8 +79,8 @@ public class CategoryController implements Command {
                 sqlRequestMasterService = "select * from master m join user u on m.user_id=u.id where m.id = any " +
                         "(select master_id from master_has_category where category_id = any (select id from category where id = ?)) ";
                 parameters = new ArrayList<>();
-                parameters.add(req.getAttribute("category")!=null?
-                        Integer.parseInt(req.getAttribute("category").toString()):(Integer)session.getAttribute("idCategory"));
+                parameters.add(req.getParameter("category")!=null?
+                        Integer.parseInt(req.getParameter("category").toString()):(Integer)session.getAttribute("idCategory"));
 
                 Category category = CategoryService.getCategoryById(req.getAttribute("category")!=null?
                         Integer.parseInt(req.getAttribute("category").toString()):(Integer)session.getAttribute("idCategory"));
@@ -108,20 +108,20 @@ public class CategoryController implements Command {
             }
 
             String sortSQLRequest = "";
-            if (req.getAttribute("name") != null || session.getAttribute("name") != null) {
+            if (req.getParameter("name") != null || session.getAttribute("name") != null) {
                 sortSQLRequest = String.format("order by u.name %s ", req.getAttribute("name") != null
                         ? req.getAttribute("name") : session.getAttribute("name").toString() );
-                session.setAttribute("name",req.getAttribute("name")!=null?req.getAttribute("name") : session.getAttribute("name").toString());
-                if (req.getAttribute("name") != null) {
+                session.setAttribute("name",req.getParameter("name")!=null?req.getParameter("name") : session.getAttribute("name").toString());
+                if (req.getParameter("name") != null) {
                     session.removeAttribute("rating");
                 }
             }
 
-            if (req.getAttribute("rating") != null || session.getAttribute("rating") != null) {
+            if (req.getParameter("rating") != null || session.getAttribute("rating") != null) {
                 sortSQLRequest = String.format("order by (rating_sum*100/rating_count) %s ", req.getAttribute("rating") != null
                         ? req.getAttribute("rating") : session.getAttribute("rating").toString());
-                session.setAttribute("rating",req.getAttribute("rating")!=null?req.getAttribute("rating") : session.getAttribute("rating").toString());
-                if (req.getAttribute("rating") != null) {
+                session.setAttribute("rating",req.getParameter("rating")!=null?req.getParameter("rating") : session.getAttribute("rating").toString());
+                if (req.getParameter("rating") != null) {
                     session.removeAttribute("name");
                 }
             }
