@@ -9,6 +9,7 @@ import web.repository.DBManager;
 import web.repository.impl.ClientDAOImpl;
 import web.repository.impl.MasterDAOImpl;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public class MasterService {
@@ -22,6 +23,9 @@ public class MasterService {
 
     static final String SQL_FIND_MASTER_BY_GENERAL_CATEGORY_ID = "select * from master where id = any " +
             "(select master_id from master_has_category where category_id = any (select id from category where general_category_id = ?));";
+
+    static final String SQL_FIND_MASTER_BY_DATE_ORDER =
+            "select * from master where id = any (select master_id from orders where date_order = ? order by time_order asc)";
 
     public static Master updateMaster (Master master) throws DBException, EntityException {
         return new MasterDAOImpl().update(DBManager.getInstance().getConnection(),master);
@@ -41,6 +45,11 @@ public class MasterService {
     public static List<Master> getAllMasterByName(String name) throws DBException, EntityException{
         return new MasterDAOImpl().findElementsBySQlRequest(DBManager.getInstance().getConnection(),SQL_FIND_MASTER_BY_NAME, true, "%" + name + "%");
     }
+
+    public static List<Master> getAllMasterByDateOrder(LocalDate localDate) throws DBException, EntityException{
+        return new MasterDAOImpl().findElementsBySQlRequest(DBManager.getInstance().getConnection(),SQL_FIND_MASTER_BY_DATE_ORDER, true, localDate);
+    }
+
     public static Master getMasterById(Integer masterId) throws DBException, EntityException{
         return new MasterDAOImpl().findElementById(DBManager.getInstance().getConnection(),masterId,true);
     }

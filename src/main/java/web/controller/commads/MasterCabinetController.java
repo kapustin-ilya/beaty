@@ -14,6 +14,7 @@ import web.service.OrderService;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.time.LocalDate;
 import java.util.List;
 
 public class MasterCabinetController implements Command {
@@ -28,9 +29,20 @@ public class MasterCabinetController implements Command {
             User user = (User) session.getAttribute("user");
             Master master = MasterService.getAllMaster().stream().filter(m->m.getUserId().equals(user.getId())).findFirst().get();
             Integer idMaster = master.getId();
+            List<OrderDTO> orderDTOList = null;
+            if (req.getParameter("dateVisitMaster") != null && req.getParameter("dateVisitMaster").equals("") ){
+                orderDTOList = OrderService.getOrderDTOsMaster(idMaster);
+                session.removeAttribute("dateVisitMaster");
+            } else if ((req.getParameter("dateVisitMaster") != null && !req.getParameter("dateVisitMaster").equals("") ) || session.getAttribute("dateVisitMaster") != null ) {
+                String date = req.getParameter("dateVisitMaster") != null && !req.getParameter("dateVisitMaster").equals("") ? req.getParameter("dateVisitMaster") : session.getAttribute("dateVisitMaster").toString();
+                session.setAttribute("dateVisitMaster", date);
 
-
-            List<OrderDTO> orderDTOList = OrderService.getOrderDTOsMaster(idMaster);
+                String[] d = date.split("-");
+                LocalDate localDate = LocalDate.of(Integer.parseInt(d[0]), Integer.parseInt(d[1]), Integer.parseInt(d[2]));
+                orderDTOList = OrderService.getOrderDTOsByDateOrderAndMaster(localDate, idMaster);
+            } else{
+                orderDTOList = OrderService.getOrderDTOsMaster(idMaster);
+            }
 
             // Start block pagination
             Integer pageSize = 3;

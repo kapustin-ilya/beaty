@@ -1,0 +1,32 @@
+
+@
+java:S5411""*Use the primitive boolean expression here.(®œã¼
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(ë›èÌûÿÿÿÿ
+U
+java:S1161":Add the "@Override" annotation above this method signature(ë›èÌûÿÿÿÿ
+7	java:S131""Add a default case to this switch.(±à»¡
+=
+java:S1125"(Remove the unnecessary boolean literals.(áÜl
+C
+java:S1125"(Remove the unnecessary boolean literals.(Ñ¤«Íúÿÿÿÿ
+C
+java:S1125"(Remove the unnecessary boolean literals.(®Ž÷óÿÿÿÿÿ
+>
+java:S1125"(Remove the unnecessary boolean literals.(«ûéÅ
+C
+java:S1125"(Remove the unnecessary boolean literals.(½°¦Ÿøÿÿÿÿ
+C
+java:S1125"(Remove the unnecessary boolean literals.(•Ü±Üûÿÿÿÿ
+C
+java:S1125"(Remove the unnecessary boolean literals.(™«…‰ùÿÿÿÿ
+>
+java:S1125"(Remove the unnecessary boolean literals.(ÄÙÃ€
+C
+java:S1125"(Remove the unnecessary boolean literals.(ãŠŠþÿÿÿÿ
+>
+java:S1125"(Remove the unnecessary boolean literals.(®çÔ˜
+>
+java:S1125"(Remove the unnecessary boolean literals.(›‡²
+>
+java:S1125"(Remove the unnecessary boolean literals.(˜ÿ“š

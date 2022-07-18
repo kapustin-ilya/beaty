@@ -11,5 +11,5 @@ import java.io.Serializable;
 @Data
 public class Entity implements Serializable, Cloneable {
     @Column(name = "id")
-    public Integer id;
+    Integer id;
 }

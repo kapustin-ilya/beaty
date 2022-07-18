@@ -33,8 +33,8 @@ public class TestResultEntityService extends Assert {
     public void destroy (){
         for (int i = 0; i < connections.size(); i++) {
             try {
-                if (connections.get(0) !=null) {
-                    connections.get(0).close();
+                if (connections.get(i) !=null) {
+                    connections.get(i).close();
                 }
             } catch (SQLException e) {
                 e.printStackTrace();

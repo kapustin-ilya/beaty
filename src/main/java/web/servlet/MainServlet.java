@@ -13,6 +13,7 @@ import java.io.IOException;
 public class MainServlet extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+        
         resp.setCharacterEncoding("UTF-8");
         String nameCommand = req.getParameter("command") != null ?  req.getParameter("command") : "";
         Command command = MapCommand.getCommand(nameCommand);

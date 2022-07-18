@@ -110,7 +110,6 @@ public class UpdateTimeAdmin extends HttpServlet {
                 result.append(String.format(temp,localTime.toString(),localTime.toString()));
             }
 
-
             response.getWriter().println(result.toString());
             response.setStatus(200);
 

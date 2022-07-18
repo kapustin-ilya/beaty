@@ -28,6 +28,9 @@ public class LogOutController implements Command {
         session.removeAttribute("user");
         session.removeAttribute("clientUser");
         session.removeAttribute("masterUser");
+        session.removeAttribute("dateVisitMaster");
+        session.removeAttribute("dateVisitAdmin");
+        session.removeAttribute("masterSearch");
 
         return "index.jsp";
     }

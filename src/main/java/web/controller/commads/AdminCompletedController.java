@@ -77,7 +77,7 @@ public class AdminCompletedController implements Command {
                         timeFinishLastOrder = timeFinishLastOrder.plusHours(category.getWorkTime().getHour());
                         timeFinishLastOrder = timeFinishLastOrder.plusMinutes(category.getWorkTime().getMinute());
                     }
-                    if (timeStartLastOrder.compareTo(timeStartNewOrder)==0 || (timeStartLastOrder.isBefore(timeStartNewOrder) && timeFinishLastOrder.isAfter(timeStartNewOrder))) {
+                    if (timeStartLastOrder.compareTo(timeStartNewOrder)==0 || (timeStartLastOrder.isBefore(timeStartNewOrder) && timeFinishLastOrder.isAfter(timeStartNewOrder)) || (timeStartNewOrder.isBefore(timeStartLastOrder) && timeFinishNewOrder.isAfter(timeStartLastOrder))) {
                         checkNewTime = false;
                     }
                 }

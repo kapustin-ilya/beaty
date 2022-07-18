@@ -115,6 +115,9 @@
         <% session.removeAttribute("masterCabinet"); %>
         <% session.removeAttribute("profileCabinet"); %>
 
+        if (document.getElementById('comment') != null) {
+            document.getElementById('comment').style.display = "none";
+        }
         document.getElementById('login').style.display = "none";
         document.getElementById('front').style.display = "none";
         document.getElementById('registration').style.display = "none";

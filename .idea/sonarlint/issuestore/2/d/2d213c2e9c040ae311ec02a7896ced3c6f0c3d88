@@ -1,0 +1,15 @@
+
+h
+java:S11928"RDefine a constant instead of duplicating this literal "errorRegistration" 3 times.(´Ðæ
+t
+java:S11922"^Define a constant instead of duplicating this literal "Created new user (%d userId)." 3 times.(ƒºê©
+:
+java:S26292"$Invoke method(s) only conditionally.(ƒºê©
+:
+java:S26297"$Invoke method(s) only conditionally.(ƒºê©
+:
+java:S2629?"$Invoke method(s) only conditionally.(ƒºê©
+X
+java:S1854>"=Remove this useless assignment to local variable "newMaster".(µØÆ‘úÿÿÿÿ
+[
+java:S1155"">Use isEmpty() to check whether the collection is empty or not.(„£ÂÆ8¯œüãž0

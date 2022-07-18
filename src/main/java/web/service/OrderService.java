@@ -21,7 +21,9 @@ public class OrderService {
     static final String SQL_FIND_ALL_Order = "select * from orders order by date_order desc, time_order desc;";
 
     static final String SQL_FIND_Order_BY_DATE_ORDER_AND_MASTER_ID = "select * from orders where date_order = ? and master_id=? order by time_order asc;";
+    static final String SQL_FIND_Order_BY_DATE_ORDER = "select * from orders where date_order = ? order by time_order asc;";
     static final String SQL_FIND_Order_BY_DATE_ORDER_AND_MASTER_ID_AND_ID_IS_NOT = "select * from orders where date_order = ? and master_id=? and id!=? order by time_order asc;";
+
 
     public static Order getOrderById(Integer id) throws DBException, EntityException {
         return new OrderDAOImpl().findElementById(DBManager.getInstance().getConnection(),id,true);
@@ -39,6 +41,14 @@ public class OrderService {
     }
     public static List<Order> getOrdersByDateOrderAndMaster(LocalDate localDate, Integer masterId) throws DBException, EntityException{
         return new OrderDAOImpl().findElementsBySQlRequest(DBManager.getInstance().getConnection(),SQL_FIND_Order_BY_DATE_ORDER_AND_MASTER_ID,true, localDate,masterId);
+    }
+    public static List<OrderDTO> getOrderDTOsByDateOrderAndMaster(LocalDate localDate, Integer masterId) throws DBException, EntityException{
+        List<Order> orderList = new OrderDAOImpl().findElementsBySQlRequest(DBManager.getInstance().getConnection(),SQL_FIND_Order_BY_DATE_ORDER_AND_MASTER_ID,true, localDate,masterId);
+        return getOrderDTOs(orderList);
+    }
+    public static List<OrderDTO> getOrderDTOsByDateOrde(LocalDate localDate) throws DBException, EntityException{
+        List<Order> orderList = new OrderDAOImpl().findElementsBySQlRequest(DBManager.getInstance().getConnection(),SQL_FIND_Order_BY_DATE_ORDER,true, localDate);
+        return getOrderDTOs(orderList);
     }
     public static List<Order> getOrdersByDateOrderAndMasterAndIdIsNot(LocalDate localDate, Integer masterId, Integer orderID) throws DBException, EntityException{
         return new OrderDAOImpl().findElementsBySQlRequest(DBManager.getInstance().getConnection(),SQL_FIND_Order_BY_DATE_ORDER_AND_MASTER_ID_AND_ID_IS_NOT,true, localDate,masterId,orderID);

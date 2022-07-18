@@ -26,6 +26,7 @@
     <body>
 
     <jsp:include page="header.jsp" />
+    <jsp:include page="comment.jsp" />
 
 
     <table>
@@ -84,7 +85,7 @@
             <div style="padding-left: 50px; padding-top: 20px;">
                 <table style="border-spacing: 50px;">
                     <c:forEach var = "master" items = "${masterList}" >
-                         <td style="text-align: center; background-color: white; width:200px; font-size: 20px; border-radius: 50px;">
+                         <td class="master-card ${master.getId()}-master" style="text-align: center; background-color: white; width:200px; font-size: 20px; border-radius: 50px;">
 
                            <c:if test= "${empty master.getAdressPhoto()}">
                                <img style="border-radius: 50px;" src="${pageContext.request.contextPath}/static/images/test2.jpg"/ alt="foto" weight="200" height="200"><br/>
@@ -119,6 +120,10 @@
                                      <img src="${pageContext.request.contextPath}/static/images/star.png"/ weight="20" height="20">
                                  </c:forEach>
                              </c:if>
+
+                             <br/>
+                              <img class="master-comment ${master.getId()}-master" src="${pageContext.request.contextPath}/static/images/comment.jpg"/ weight="40" height="40" >
+
                          </td>
 
                    </c:forEach>
@@ -133,6 +138,23 @@
     </table>
 
     <script>
+
+        var masterCard = document.getElementsByClassName("master-comment");
+        for ( var i = 0; i < masterCard.length; i++) {
+            masterCard[i].addEventListener('click',openComments,true);
+        }
+
+        function openComments(e) {
+            var idMaster = e.target.className.split(" ")[1].split("-")[0];
+            document.getElementById('comment').style.display = "block";
+            document.getElementById('front').style.display = "";
+            $.get('GetMasterComments', {"idMaster": idMaster  },
+                                        function(responseText) {
+                                            console.log(responseText);
+                                            $("#comment-id-master").html(responseText);
+                                        });
+
+        }
 
         function pagination(index){
             var url = window.location.href.split(".")[0];

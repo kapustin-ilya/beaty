@@ -11,7 +11,7 @@ public interface AbstractDAO<E extends Entity> {
 
     public List<E> findAll(Connection con, boolean versionOfSearch) throws DBException, EntityException;
     public E findElementById(Connection con, Integer id, boolean versionOfSearch) throws DBException, EntityException;
-    public List<E> findElementsBySQlRequest(Connection con, String SQLReques, boolean versionOfSearch, Object...parameters) throws DBException, EntityException;
+    public List<E> findElementsBySQlRequest(Connection con, String SQLRequest, boolean versionOfSearch, Object...parameters) throws DBException, EntityException;
 
     public E insert (Connection con, E entity) throws DBException, EntityException;
     public E update (Connection con, E entity) throws DBException, EntityException;

@@ -36,12 +36,13 @@ public class ProfileUpdateController implements Command {
         HttpSession session = req.getSession();
         cleanSession(session);
 
+        User user = (User) session.getAttribute("user");
+
         String password = req.getParameter("password");
         String surname = req.getParameter("surname");
         String name = req.getParameter("name");
         String phoneNumber = req.getParameter("phoneNumber");
 
-        User user = (User) session.getAttribute("user");
 
         user.setPassword(HashPassword.run(password));
         user.setName(name);

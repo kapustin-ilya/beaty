@@ -40,6 +40,7 @@ public abstract class AbstractDAOImpl<E extends Entity> implements AbstractDAO<E
         this.entityClass = entityClass;
         this.entitiesDaoImpl = entitiesDaoImpl;
         nameDB = entityClass.getAnnotation(TableDB.class).name();
+
         SQL_FIND_ALL_ELEMENTS = String.format("select * from %s;",nameDB);
         SQL_FIND_ELEMENT_BY_ID = String.format("select * from %s where id = ? limit 1;",nameDB);
         SQL_DELETE_ELEMENT_BY_ID = String.format("delete from %s where id = ?;",nameDB);
@@ -49,7 +50,7 @@ public abstract class AbstractDAOImpl<E extends Entity> implements AbstractDAO<E
     @Override
     public List<E> findElementsBySQlRequest(Connection con, String SQLRequest, boolean versionOfSearch, Object...parameters) throws DBException,EntityException {
         cn = con;
-        List<E> allElemetns = new ArrayList<>();
+        List<E> allElements = new ArrayList<>();
         try {
             ps = cn.prepareStatement(SQLRequest);
             for (int i = 1; i<=parameters.length;i++){
@@ -57,7 +58,7 @@ public abstract class AbstractDAOImpl<E extends Entity> implements AbstractDAO<E
             }
             rs = ps.executeQuery();
             while (!rs.isClosed() && rs.next()) {
-                allElemetns.add(readNextElement(rs, versionOfSearch));
+                allElements.add(readNextElement(rs, versionOfSearch));
             }
             rs.close();
             ps.close();
@@ -69,7 +70,7 @@ public abstract class AbstractDAOImpl<E extends Entity> implements AbstractDAO<E
             close(ps);
             close(cn);
         }
-        return allElemetns;
+        return allElements;
     }
 
     @Override
@@ -132,8 +133,7 @@ public abstract class AbstractDAOImpl<E extends Entity> implements AbstractDAO<E
             cn.setAutoCommit(false);
             cn.setTransactionIsolation(Connection.TRANSACTION_READ_COMMITTED);
             ps = cn.prepareStatement(SQL_INSERT_FINAL, Statement.RETURN_GENERATED_KEYS);
-            Integer parameterIndex = 1;
-            parameterIndex = prepareStatementBeforeInsOrUp(ps,entity);
+            prepareStatementBeforeInsOrUp(ps,entity);
             int result = ps.executeUpdate();
             if (result != 0) {
                 rs = ps.getGeneratedKeys();

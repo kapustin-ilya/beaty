@@ -13,13 +13,20 @@
 
         <table class="table-user" style = "text-align: center; padding-left: 50px; padding-right: 50px;">
             <tr style = "width: 200px">
-               <th class="table-user-th-td "><fmt:message key="cabinet.dateVisit"/></th>
-               <th class="table-user-th-td "><fmt:message key="cabinet.timeStartVisit"/></th>
-               <th class="table-user-th-td "><fmt:message key="cabinet.timeFinishVisit"/></th>
-               <th class="table-user-th-td "><fmt:message key="cabinet.category"/></th>
-               <th class="table-user-th-td "><fmt:message key="admin.completed"/></th>
-               <th class="table-user-th-td "><fmt:message key="cabinet.comment"/></th>
-               <th class="table-user-th-td "></th>
+               <form action="/beauty/b?command=masterCabinet" method="post">
+
+                   <th class="table-user-th-td ">
+                        <fmt:message key="cabinet.dateVisit"/>
+                        <br/>
+                        <input type="date" name = "dateVisitMaster" value="${dateVisitMaster}"/>
+                   </th>
+                   <th class="table-user-th-td "><fmt:message key="cabinet.timeStartVisit"/> </th>
+                   <th class="table-user-th-td "><fmt:message key="cabinet.timeFinishVisit"/> </th>
+                   <th class="table-user-th-td "><fmt:message key="cabinet.category"/></th>
+                   <th class="table-user-th-td "><fmt:message key="admin.completed"/></th>
+                   <th class="table-user-th-td "><fmt:message key="cabinet.comment"/></th>
+                   <th class="table-user-th-td "> <input type="submit" value = <fmt:message key="category.search"/> > </th>
+               </form>
             </tr>
             <c:forEach var = "orderDTO" items = "${orderDTOList}">
                 <tr style = "border: 1px solid black; padding-top: 10px; padding-bottom: 10px;">
